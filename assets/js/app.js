@@ -65,6 +65,7 @@ function renderHero(articles) {
   const featured = articles.find(a => a.featured) || articles[0];
   const sidebar  = articles.filter(a => a.slug !== featured.slug).slice(0, 4);
 
+  // Main hero
   const main = document.getElementById('js-hero-main');
   if (main) {
     main.innerHTML = `
@@ -83,6 +84,7 @@ function renderHero(articles) {
     `;
   }
 
+  // Sidebar
   const sidebarEl = document.getElementById('js-hero-sidebar');
   if (sidebarEl) {
     sidebarEl.innerHTML = sidebar.map(a => `
@@ -95,11 +97,13 @@ function renderHero(articles) {
   }
 }
 
+// ─── Grid ─────────────────────────────────────────────────
 function renderGrid(articles) {
   const grid = document.getElementById('js-grid');
   const count = document.getElementById('js-feed-count');
   if (!grid) return;
 
+  // Grid shows non-featured articles (or all if filtering)
   const featured = activeCategory === 'All'
     ? articles.find(a => a.featured)
     : null;
@@ -124,13 +128,14 @@ function renderGrid(articles) {
       <h3 class="card__headline">${escHtml(a.title)}</h3>
       <p class="card__summary">${escHtml(a.summary)}</p>
       <div class="card__footer">
-        <span>${escHtml(a.dateDisplay)}</span>
-        <span class="card__tag">Lvl ${a.sourceLevel} source</span>
+        <span class="byline-pill"><span class="byline-pill__mark">W</span>Wiba Signals</span>
+        <span class="card__meta">${escHtml(a.dateDisplay)} &nbsp;&middot;&nbsp; Lvl ${a.sourceLevel}</span>
       </div>
     </article>
   `).join('');
 }
 
+// ─── Navigation Filter ────────────────────────────────────
 function initNavFilter() {
   const navItems = document.querySelectorAll('.nav-bar__item[data-cat]');
   navItems.forEach(btn => {
@@ -143,17 +148,21 @@ function initNavFilter() {
 function applyFilter(cat) {
   activeCategory = cat;
 
+  // Update nav
   document.querySelectorAll('.nav-bar__item[data-cat]').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.cat === cat);
   });
 
+  // Update feed title
   const titleEl = document.getElementById('js-feed-title');
   if (titleEl) titleEl.textContent = cat === 'All' ? 'Latest' : cat;
 
+  // Filter articles
   const filtered = cat === 'All'
     ? ALL_ARTICLES
     : ALL_ARTICLES.filter(a => a.category === cat);
 
+  // Re-render hero only for "All"
   if (cat === 'All') {
     renderHero(ALL_ARTICLES);
     document.getElementById('js-hero').style.display = '';
@@ -174,10 +183,12 @@ function initFooterFilters() {
   });
 }
 
+// ─── Navigation ───────────────────────────────────────────
 function goArticle(slug) {
   window.location.href = `article.html?slug=${slug}`;
 }
 
+// ─── Article Page ─────────────────────────────────────────
 async function loadArticle(slug) {
   try {
     const articles = await fetchArticles();
@@ -234,25 +245,30 @@ async function loadArticle(slug) {
     const navCat = document.getElementById('js-nav-category');
     if (navCat) navCat.textContent = article.category;
 
+    // Render content
     document.getElementById('js-category').textContent = article.category;
     document.getElementById('js-headline').textContent = article.title;
     document.getElementById('js-deck').textContent = article.summary;
     document.getElementById('js-date-display').textContent = article.dateDisplay;
     document.getElementById('js-reading-time').textContent = article.readingTime;
 
+    // Source badge
     const badge = document.getElementById('js-source-badge');
     if (badge) badge.innerHTML = `📚 ${escHtml(article.source)}`;
 
+    // Body (trusted HTML from our own JSON)
     document.getElementById('js-body').innerHTML = article.body;
 
+    // Source row
     const sourceRow = document.getElementById('js-source-row');
     if (sourceRow) {
       sourceRow.innerHTML = `
         <strong>Source:</strong> ${escHtml(article.source)} — Level ${article.sourceLevel} source
-        ${article.sourceUrl ? ` · <a href="${article.sourceUrl}" target="_blank" rel="noopener">View'source →</a>` : ''}
+        ${article.sourceUrl ? ` · <a href="${article.sourceUrl}" target="_blank" rel="noopener">View source →</a>` : ''}
       `;
     }
 
+    // Tags
     const tagsEl = document.getElementById('js-tags');
     if (tagsEl && article.tags) {
       tagsEl.innerHTML = article.tags.map(t =>
@@ -260,6 +276,7 @@ async function loadArticle(slug) {
       ).join('');
     }
 
+    // Show content, hide skeleton
     document.getElementById('js-skeleton').style.display = 'none';
     document.getElementById('js-content').style.display = '';
 
@@ -281,6 +298,7 @@ function renderError() {
   if (grid) grid.innerHTML = `<div class="empty-state"><p>Unable to load articles. Please try again.</p></div>`;
 }
 
+// ─── Utils ────────────────────────────────────────────────
 function escHtml(str) {
   if (!str) return '';
   return String(str)
