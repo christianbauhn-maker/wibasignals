@@ -28,18 +28,118 @@
 </head>
 <body>
 
-  <header class="masthead"><div class="masthead__inner"><span class="masthead__meta" id="js-date">Monday, January 1, 2026</span><div class="masthead__brand"><a href="/" class="masthead__wordmark">Wiba Signals</a><p class="masthead__tagline">Sources Cited &nbsp;·&nbsp; Always Current</p></div><a href="https://wibasignals.substack.com" target="_blank" rel="noopener" class="masthead__subscribe">Subscribe ₒ</a></div></header>
+  <!-- ─── Masthead ────────────────────────────────────── -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <span class="masthead__meta" id="js-date">Monday, January 1, 2026</span>
+      <div class="masthead__brand">
+        <a href="/" class="masthead__wordmark">Wiba Signals</a>
+        <p class="masthead__tagline">Sources Cited &nbsp;·&nbsp; Always Current</p>
+      </div>
+      <a href="https://wibasignals.substack.com" target="_blank" rel="noopener" class="masthead__subscribe">Subscribe →</a>
+    </div>
+  </header>
 
-  <nav class="nav-bar" aria-label="Section navigation"><div class="nav-bar__inner"><a href="/" class="nav-bar__item">← All Articles</a><span class="nav-bar__item" id="js-nav-category" style="color:var(--color-accent-red)"></span></div></nav>
+  <!-- ─── Nav Bar ─────────────────────────────────────── -->
+  <nav class="nav-bar" aria-label="Section navigation">
+    <div class="nav-bar__inner">
+      <a href="/" class="nav-bar__item">← All Articles</a>
+      <span class="nav-bar__item" id="js-nav-category" style="color:var(--color-accent-red)"></span>
+    </div>
+  </nav>
 
-  <div class="container"><article class="article-layout" id="js-article"><div id="js-skeleton"><div class="skeleton" style="height:12px;width:80px;margin-bottom:28px"></div><div class="skeleton" style="height:48px;width:95%;margin-bottom:8px"></div><div class="skeleton" style="height:48px;width:80%;margin-bottom:20px"></div><div class="skeleton" style="height:22px;width:90%;margin-bottom:6px"></div><div class="skeleton" style="height:22px;width:85%;margin-bottom:28px"></div><div class="skeleton" style="height:12px;width:200px;margin-bottom:48px"></div><div class="skeleton" style="height:18px;width:100%;margin-bottom:10px"></div><div class="skeleton" style="height:18px;width:95%;margin-bottom:10px"></div><div class="skeleton" style="height:18px;width:90%;margin-bottom:10px"></div><div class="skeleton" style="height:18px;width:100%;margin-bottom:10px"></div><div class="skeleton" style="height:18px;width:88%;"></div></div><div id="js-content" style="display:none"><a href="/" class="article__back">← Wiba Signals</a><p class="article__category" id="js-category"></p><h1 class="article__headline" id="js-headline"></h1><p class="article__deck" id="js-deck"></p><div class="article__meta"><span id="js-date-display"></span><span class="hero__meta-sep">·</span><span id="js-reading-time"></span> min read<span class="hero__meta-sep">·</span><span class="article__source-badge" id="js-source-badge"></span></div><div class="article__body" id="js-body"></div><div class="article__source-row" id="js-source-row"></div><div class="article__tags" id="js-tags"></div></div><div id="js-error" style="display:none" class="empty-state"><p>Article not found. <a href="/" style="color:var(--color-teal)">Return to Wiba Signals →</a></p></div></article></div>
+  <!-- ─── Article ─────────────────────────────────────── -->
+  <div class="container">
+    <article class="article-layout" id="js-article">
 
-  <section class="newsletter-cta"><p class="newsletter-cta__eyebrow">Intelligence Briefing</p><h2 class="newsletter-cta__headline">More like this in your inbox.</h2><p class="newsletter-cta__sub">Decision-grade intelligence. Cited sources, structured analysis, always current. Subscribe to Wiba Signals and stay ahead of the research.</p><a href="https://wibasignals.substack.com" target="_blank" rel="noopener" class="btn-primary">Subscribe on Substack</a><p class="newsletter-cta__note">Free. No spam. Unsubscribe anytime.</p></section>
+      <!-- Loading skeleton -->
+      <div id="js-skeleton">
+        <div class="skeleton" style="height:12px;width:80px;margin-bottom:28px"></div>
+        <div class="skeleton" style="height:48px;width:95%;margin-bottom:8px"></div>
+        <div class="skeleton" style="height:48px;width:80%;margin-bottom:20px"></div>
+        <div class="skeleton" style="height:22px;width:90%;margin-bottom:6px"></div>
+        <div class="skeleton" style="height:22px;width:85%;margin-bottom:28px"></div>
+        <div class="skeleton" style="height:12px;width:200px;margin-bottom:48px"></div>
+        <div class="skeleton" style="height:18px;width:100%;margin-bottom:10px"></div>
+        <div class="skeleton" style="height:18px;width:95%;margin-bottom:10px"></div>
+        <div class="skeleton" style="height:18px;width:90%;margin-bottom:10px"></div>
+        <div class="skeleton" style="height:18px;width:100%;margin-bottom:10px"></div>
+        <div class="skeleton" style="height:18px;width:88%;"></div>
+      </div>
 
-  <footer class="footer"><div class="footer__inner"><div class="footer__brand"><div class="footer__wordmark">Wiba Signals</div><p>Most reporting is either too shallow or too stale to act on. Wiba Signals synthesizes large volumes of mixed-source data into sharp, human-readable intelligence.</p></div><div><p class="footer__col-title">Coverage</p><ul class="footer__links"><li><a href="/?cat=AI+Policy">AI Policy</a></li><li><a href="/?cat=Labour+Market">Labour Market</a></li><li><a href="/?cat=Enterprise+AI">Enterprise AI</a></li><li><a href="/?cat=Macro">Macro</a></li></ul></div><div><p class="footer__col-title">About</p><ul class="footer__links"><li><a href="https://wibasignals.substack.com" target="_blank" rel="noopener">Substack Newsletter</a></li><li><a href="https://www.linkedin.com/in/christianwiba" target="_blank" rel="noopener">LinkedIn</a></li></ul></div></div><div class="footer__bottom"><span>© 2026 Wiba Signals. Sources cited.</span><span>Intelligence for decision-makers.</span></div></footer>
+      <!-- Article content (hidden until loaded) -->
+      <div id="js-content" style="display:none">
+        <a href="/" class="article__back">← Wiba Signals</a>
+
+        <p class="article__category" id="js-category"></p>
+        <p class="article__series" id="js-series" style="display:none"></p>
+        <h1 class="article__headline" id="js-headline"></h1>
+        <p class="article__deck" id="js-deck"></p>
+
+        <div class="article__meta">
+          <span id="js-date-display"></span>
+          <span class="hero__meta-sep">·</span>
+          <span id="js-reading-time"></span> min read
+          <span class="hero__meta-sep">·</span>
+          <span class="article__source-badge" id="js-source-badge"></span>
+        </div>
+
+        <div class="article__body" id="js-body"></div>
+
+        <div class="article__source-row" id="js-source-row"></div>
+
+        <div class="article__tags" id="js-tags"></div>
+      </div>
+
+      <!-- Error state -->
+      <div id="js-error" style="display:none" class="empty-state">
+        <p>Article not found. <a href="/" style="color:var(--color-teal)">Return to Wiba Signals →</a></p>
+      </div>
+
+    </article>
+  </div>
+
+  <!-- ─── Newsletter CTA ───────────────────────────────── -->
+  <section class="newsletter-cta">
+    <p class="newsletter-cta__eyebrow">Intelligence Briefing</p>
+    <h2 class="newsletter-cta__headline">More like this in your inbox.</h2>
+    <p class="newsletter-cta__sub">Decision-grade intelligence. Cited sources, structured analysis, always current. Subscribe to Wiba Signals and stay ahead of the research.</p>
+    <a href="https://wibasignals.substack.com" target="_blank" rel="noopener" class="btn-primary">Subscribe on Substack</a>
+    <p class="newsletter-cta__note">Free. No spam. Unsubscribe anytime.</p>
+  </section>
+
+  <!-- ─── Footer ───────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__wordmark">Wiba Signals</div>
+        <p>Most reporting is either too shallow or too stale to act on. Wiba Signals synthesizes large volumes of mixed-source data into sharp, human-readable intelligence.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Coverage</p>
+        <ul class="footer__links">
+          <li><a href="/?cat=AI+Policy">AI Policy</a></li>
+          <li><a href="/?cat=Labour+Market">Labour Market</a></li>
+          <li><a href="/?cat=Enterprise+AI">Enterprise AI</a></li>
+          <li><a href="/?cat=Macro">Macro</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">About</p>
+        <ul class="footer__links">
+          <li><a href="https://wibasignals.substack.com" target="_blank" rel="noopener">Substack Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Wiba Signals. Sources cited.</span>
+      <span>Intelligence for decision-makers.</span>
+    </div>
+  </footer>
 
   <script src="assets/js/app.js"></script>
   <script>
+    // Article page init — reads ?slug= from URL
     document.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams(window.location.search);
       const slug = params.get('slug');
