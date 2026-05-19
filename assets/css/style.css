@@ -145,6 +145,31 @@ img { display: block; max-width: 100%; }
   border-bottom-color: var(--color-accent-red);
 }
 
+/* Nav: coming-soon items */
+.nav-bar__item--coming {
+  opacity: 0.38;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.nav-bar__item--coming:hover {
+  color: var(--color-text);
+  border-bottom-color: transparent;
+}
+.coming-badge {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 1px 5px;
+  margin-left: 5px;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
 /* ─── Breaking Banner ──────────────────────────────── */
 .breaking-banner {
   background: var(--color-text);
