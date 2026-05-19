@@ -125,6 +125,7 @@ function renderGrid(articles) {
   grid.innerHTML = gridArticles.map(a => `
     <article class="card" onclick="goArticle('${a.slug}')">
       <p class="card__category">${escHtml(a.category)}</p>
+      ${a.series ? `<p class="card__series">${escHtml(a.series)} &nbsp;·&nbsp; Part ${a.seriesPart}</p>` : ''}
       <h3 class="card__headline">${escHtml(a.title)}</h3>
       <p class="card__summary">${escHtml(a.summary)}</p>
       <div class="card__footer">
@@ -247,6 +248,18 @@ async function loadArticle(slug) {
 
     // Render content
     document.getElementById('js-category').textContent = article.category;
+
+    // Series label
+    const seriesEl = document.getElementById('js-series');
+    if (seriesEl) {
+      if (article.series) {
+        seriesEl.textContent = `${article.series} · Part ${article.seriesPart}`;
+        seriesEl.style.display = '';
+      } else {
+        seriesEl.style.display = 'none';
+      }
+    }
+
     document.getElementById('js-headline').textContent = article.title;
     document.getElementById('js-deck').textContent = article.summary;
     document.getElementById('js-date-display').textContent = article.dateDisplay;
