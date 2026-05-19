@@ -405,6 +405,15 @@ img { display: block; max-width: 100%; }
   margin-bottom: 8px;
 }
 
+.card__series {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  margin-bottom: 5px;
+}
+
 .card__headline {
   font-family: var(--font-serif);
   font-size: 20px;
@@ -630,6 +639,19 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-accent-red);
+  margin-bottom: 16px;
+}
+
+.article__series {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  border-left: 2px solid var(--color-teal);
+  padding: 3px 10px;
+  background: rgba(31,122,110,0.07);
   margin-bottom: 16px;
 }
 
