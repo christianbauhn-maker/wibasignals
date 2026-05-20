@@ -31,7 +31,7 @@ Full methodology: [wibasignals.com/methodology/](https://wibasignals.com/methodo
 
 ## Copyright and Intellectual Property
 
-Copyright 2026 Christian Winholt-Bau. All rights reserved.
+Copyright 2026 Wiba Signals. All rights reserved.
 
 The Wiba Signals editorial database — including all published articles, source annotations, editorial classifications, and the analytical framework applied to source material — constitutes a protected database under **EU Directive 96/9/EC (sui generis database right)**, implemented in Swedish law through the Database Act (1997:306).
 
@@ -49,5 +49,5 @@ For licensing inquiries: [wibasignals.com/methodology/](https://wibasignals.com/
 
 ---
 
-*Wiba Signals is a project by Christian Winholt-Bau.*
+*Wiba Signals is a project by Wiba Signals.*
 *Established 2026. Discovery documented from 2026-05-11.*
