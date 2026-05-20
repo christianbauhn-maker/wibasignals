@@ -40,7 +40,7 @@
       <div class="container">
         <p class="eyebrow">Independent AI Intelligence</p>
         <h1>The AI Signal<br>in the Noise</h1>
-        <p class="hero-sub">Sweden ranks #1 globally in AI talent. 57.9% of its businesses haven't adopted AI. We document the gap — and what closes it.</p>
+        <p class="hero-sub">Sweden ranks #1 globally in AI talent. Large enterprises: 71.9% AI adoption. Small businesses: 30.8%. The expertise exists — it isn't reaching where it's needed most.</p>
         <div id="newsletter">
           <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" action="/thanks.html">
             <input type="hidden" name="form-name" value="newsletter">
@@ -137,10 +137,19 @@
           <p class="footer-tagline">The AI Signal in the Noise</p>
         </div>
         <div class="footer-links">
-          <a href="/nyheter/">Analysis</a>
-          <a href="https://ripchatbot.com" target="_blank" rel="noopener">Forum ↗</a>
-          <a href="https://wibasignals.substack.com" target="_blank" rel="noopener">Substack</a>
-          <a href="https://bsky.app/profile/wibasignals.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          <div class="footer-link-group">
+            <p class="footer-link-label">Navigate</p>
+            <a href="/nyheter/">Analysis</a>
+            <a href="https://ripchatbot.com" target="_blank" rel="noopener">Forum ↗</a>
+          </div>
+          <div class="footer-link-group">
+            <p class="footer-link-label">Follow</p>
+            <a href="https://wibasignals.substack.com" target="_blank" rel="noopener">Substack</a>
+            <a href="https://bsky.app/profile/wibasignals.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+            <a href="https://mastodon.social/@wibasignals" target="_blank" rel="noopener">Mastodon</a>
+            <a href="https://news.ycombinator.com/user?id=wibasignals" target="_blank" rel="noopener">Hacker News</a>
+            <a href="https://github.com/christianbauhn-maker/wibasignals" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
       </div>
       <p class="footer-copy">© 2026 Wiba Signals · Founded by Christian Wiba</p>
@@ -156,7 +165,7 @@
 
     var labels = ['USA', 'Denmark', 'Sweden', 'Germany', 'EU-27'];
     var readiness = [82, 73, 90, 65, 53];
-    var adoption  = [65, 55, 42, 36, 24];
+    var adoption  = [58, 55, 35, 32, 20];
 
     var adoptionColors = labels.map(function(l) {
       return l === 'Sweden' ? '#0f172a' : '#94a3b8';
