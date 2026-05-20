@@ -769,6 +769,45 @@ a:hover { text-decoration: underline; }
 }
 .copy-embed-btn:hover { color: var(--text); }
 
+/* --- Methodology tiers --- */
+.methodology-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0;
+}
+.tier {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.tier-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  border-bottom: 1.5px solid currentColor;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 3px;
+  min-width: 130px;
+}
+.tier-label.high     { color: var(--success); }
+.tier-label.medium   { color: #d97706; }
+.tier-label.estimated { color: var(--text-muted); }
+.tier p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
 /* --- Founder credit --- */
 .founder-credit {
   margin-top: 20px;
