@@ -114,10 +114,10 @@ export default {
       const article = ARTICLES[slug];
       if (!article) return env.ASSETS.fetch(request);
 
-      // Always fetch /article from ASSETS using a clean GET request
-      const cleanUrl = new URL(request.url);
-      cleanUrl.pathname = '/article';
-      const response = await env.ASSETS.fetch(cleanUrl.toString());
+      // Fetch /article from ASSETS without query string
+      // ASSETS only serves static files -- query params cause it to fail/throw
+      const origin = new URL(request.url).origin;
+      const response = await env.ASSETS.fetch(`${origin}/article`);
 
       const ogImage = `https://wibasignals.com/assets/og/${slug}.jpg`;
       const ogUrl   = `https://wibasignals.com/article.html?slug=${slug}`;
