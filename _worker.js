@@ -114,10 +114,13 @@ export default {
       const article = ARTICLES[slug];
       if (!article) return env.ASSETS.fetch(request);
 
-      // Fetch /article from ASSETS without query string
-      // ASSETS only serves static files -- query params cause it to fail/throw
+      // Fetch article.html from ASSETS using a clean Request (no query string)
       const origin = new URL(request.url).origin;
-      const response = await env.ASSETS.fetch(`${origin}/article`);
+      const assetReq = new Request(`${origin}/article`, { method: 'GET' });
+      const response = await env.ASSETS.fetch(assetReq);
+
+      // Debug header -- remove after confirming OG injection works
+      const debugInfo = `slug:${slug};assets:${response.status};ok:${response.ok}`;
 
       const ogImage = `https://wibasignals.com/assets/og/${slug}.jpg`;
       const ogUrl   = `https://wibasignals.com/article.html?slug=${slug}`;
@@ -133,7 +136,7 @@ export default {
         `<meta name="twitter:description" content="${desc}">`,
       ].join('\n  ');
 
-      return new HTMLRewriter()
+      const transformed = new HTMLRewriter()
         .on('title', {
           element(el) { el.setInnerContent(`${article.title} -- Wiba Signals`); },
         })
@@ -154,8 +157,17 @@ export default {
         })
         .transform(response);
 
-    } catch {
-      return env.ASSETS.fetch(request);
+      // Add debug header to the transformed response
+      const newHeaders = new Headers(transformed.headers);
+      newHeaders.set('x-wiba-debug', debugInfo);
+      return new Response(transformed.body, { status: transformed.status, headers: newHeaders });
+
+    } catch(e) {
+      // Return error info as header so we can diagnose
+      const errResp = await env.ASSETS.fetch(request);
+      const h = new Headers(errResp.headers);
+      h.set('x-wiba-error', String(e));
+      return new Response(errResp.body, { status: errResp.status, headers: h });
     }
   },
 };
