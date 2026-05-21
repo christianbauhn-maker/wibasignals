@@ -157,16 +157,17 @@ export default {
         })
         .transform(response);
 
-      // Add debug header to the transformed response
+      // Add debug + no-store so CF edge never caches article responses again
       const newHeaders = new Headers(transformed.headers);
       newHeaders.set('x-wiba-debug', debugInfo);
+      newHeaders.set('Cache-Control', 'no-store');
       return new Response(transformed.body, { status: transformed.status, headers: newHeaders });
 
     } catch(e) {
-      // Return error info as header so we can diagnose
       const errResp = await env.ASSETS.fetch(request);
       const h = new Headers(errResp.headers);
       h.set('x-wiba-error', String(e));
+      h.set('Cache-Control', 'no-store');
       return new Response(errResp.body, { status: errResp.status, headers: h });
     }
   },
