@@ -17,7 +17,16 @@ function escapeAttr(str) {
     .replace(/>/g, '&gt;');
 }
 
-export async function onRequest({ request, next }) {
+export async function onRequest(context) {
+  try {
+    return await handleRequest(context);
+  } catch {
+    // Safety net - never break the site, always fall through to static asset
+    return context.next();
+  }
+}
+
+async function handleRequest({ request, next }) {
   const url = new URL(request.url);
 
   // Pass through everything that is not article.html
