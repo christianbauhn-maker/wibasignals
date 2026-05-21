@@ -92,8 +92,12 @@ export default {
   async fetch(request, env) {
     try {
       const url = new URL(request.url);
+      const pathname = url.pathname;
 
-      if (url.pathname !== '/article.html') {
+      // Intercept both /article.html and /article
+      // Cloudflare Assets redirects /article.html -> /article (clean URLs),
+      // so crawlers may hit either. We handle both here.
+      if (pathname !== '/article.html' && pathname !== '/article') {
         return env.ASSETS.fetch(request);
       }
 
@@ -103,7 +107,11 @@ export default {
       const article = ARTICLES[slug];
       if (!article) return env.ASSETS.fetch(request);
 
-      const response = await env.ASSETS.fetch(request);
+      // Always fetch /article from ASSETS (fetching /article.html returns a 301 redirect,
+      // which means HTMLRewriter would transform an empty body)
+      const cleanUrl = new URL(request.url);
+      cleanUrl.pathname = '/article';
+      const response = await env.ASSETS.fetch(new Request(cleanUrl.toString(), request));
 
       const ogImage = `https://wibasignals.com/assets/og/${slug}.jpg`;
       const ogUrl   = `https://wibasignals.com/article.html?slug=${slug}`;
