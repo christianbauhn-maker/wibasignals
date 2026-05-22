@@ -527,7 +527,9 @@ img { display: block; max-width: 100%; }
   line-height: 1.6;
 }
 .newsletter-cta__pill {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: 0 auto 20px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -536,11 +538,10 @@ img { display: block; max-width: 100%; }
   background: #E1F5EE;
   padding: 5px 14px;
   border-radius: 100px;
-  margin-bottom: 28px;
 }
 .btn-primary {
   display: inline-block;
-  background: var(--color-teal);
+  background: var(--color-text);
   color: #fff;
   font-size: 13px;
   font-weight: 700;
@@ -550,7 +551,7 @@ img { display: block; max-width: 100%; }
   border-radius: 2px;
   transition: background 0.15s;
 }
-.btn-primary:hover { background: #165e54; color: #fff; }
+.btn-primary:hover { background: #3a3a36; color: #fff; }
 .newsletter-cta__note {
   font-size: 11px;
   color: var(--color-text-muted);
