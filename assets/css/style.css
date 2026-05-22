@@ -523,8 +523,20 @@ img { display: block; max-width: 100%; }
   font-size: 15px;
   color: var(--color-text-muted);
   max-width: 480px;
-  margin: 0 auto 28px;
+  margin: 0 auto 14px;
   line-height: 1.6;
+}
+.newsletter-cta__pill {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0F6E56;
+  background: #E1F5EE;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 28px;
 }
 .btn-primary {
   display: inline-block;
@@ -766,10 +778,4 @@ img { display: block; max-width: 100%; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
 }
 
-@media (max-width: 600px) {
-  .masthead__meta { display: none; }
-  .masthead__wordmark { font-size: 28px; }
-  .feed__grid { grid-template-columns: 1fr; }
-  .footer__inner { grid-template-columns: 1fr; }
-  .footer__bottom { flex-direction: column; gap: 8px; }
-}
+@media (
