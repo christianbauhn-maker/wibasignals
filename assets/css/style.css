@@ -522,10 +522,9 @@ img { display: block; max-width: 100%; }
 .newsletter-cta__sub {
   font-size: 15px;
   color: var(--color-text-muted);
-  max-width: 480px;
+  max-width: 580px;
   margin: 0 auto 14px;
   line-height: 1.6;
-  text-wrap: balance;
 }
 .newsletter-cta__pill {
   display: block;
