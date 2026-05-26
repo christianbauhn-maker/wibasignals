@@ -19,7 +19,9 @@
                                       "LLM Reliability"
                                   ],
                          "featured":  false,
-                         "ogImage":  "/assets/og/context-engineering-external-shock.jpg"
+                         "ogImage":  "/assets/og/context-engineering-external-shock.jpg",
+                         "series":  "Context Engineering",
+                         "seriesPart":  2
                      },
                      {
                          "id":  "context-engineering-internal-preventive",
@@ -40,7 +42,9 @@
                                       "LLM Reliability"
                                   ],
                          "featured":  false,
-                         "ogImage":  "/assets/og/context-engineering-internal-preventive.jpg"
+                         "ogImage":  "/assets/og/context-engineering-internal-preventive.jpg",
+                         "series":  "Context Engineering",
+                         "seriesPart":  1
                      },
                      {
                          "id":  "eu-ai-act-asymmetry",
@@ -61,7 +65,9 @@
                                       "Regulation"
                                   ],
                          "featured":  false,
-                         "ogImage":  "/assets/og/eu-ai-act-asymmetry.jpg"
+                         "ogImage":  "/assets/og/eu-ai-act-asymmetry.jpg",
+                         "series":  "Structural Blindspots",
+                         "seriesPart":  2
                      },
                      {
                          "id":  "ai-economy-two-layers",
@@ -82,7 +88,9 @@
                                       "Enterprise AI"
                                   ],
                          "featured":  true,
-                         "ogImage":  "/assets/og/ai-economy-two-layers.jpg"
+                         "ogImage":  "/assets/og/ai-economy-two-layers.jpg",
+                         "series":  "Structural Blindspots",
+                         "seriesPart":  1
                      },
                      {
                          "id":  "ai-measurement-problem",
