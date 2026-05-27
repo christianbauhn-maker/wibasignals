@@ -81,7 +81,7 @@ function renderHero(articles) {
         <span class="hero__meta-sep">·</span>
         <span>Source: ${escHtml(featured.source)}</span>
         <span class="hero__meta-sep">·</span>
-        <a class="hero__read-link" href="article.html?slug=${featured.slug}" onclick="goArticle('${featured.slug}'); return false;">Read →</a>
+        <a class="hero__read-link" href="article.html?slug=${featured.slug}" onclick="goArticle('${featured.slug}'); return false;" aria-label="Read: ${escHtml(featured.title)}">Read →</a>
       </div>
     `;
   }
@@ -153,7 +153,9 @@ function applyFilter(cat) {
 
   // Update nav
   document.querySelectorAll('.nav-bar__item[data-cat]').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.cat === cat);
+    const isActive = btn.dataset.cat === cat;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
   });
 
   // Update feed title
