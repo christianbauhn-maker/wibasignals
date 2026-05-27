@@ -65,9 +65,11 @@ function renderHero(articles) {
   const featured = articles.find(a => a.featured) || articles[0];
   const sidebar  = articles.filter(a => a.slug !== featured.slug).slice(0, 4);
 
-  // Main hero
+  // Main hero — skip re-render if pre-rendered content already matches featured article
+  // This preserves the server-side pre-rendered LCP element and avoids a flash
   const main = document.getElementById('js-hero-main');
-  if (main) {
+  if (main && main.dataset.prerendered !== featured.slug) {
+    main.dataset.prerendered = featured.slug;
     main.innerHTML = `
       <span class="hero__category">${escHtml(featured.category)}</span>
       <h2 class="hero__headline"><a href="article.html?slug=${featured.slug}" onclick="goArticle('${featured.slug}'); return false;" style="color:inherit;text-decoration:none;">${escHtml(featured.title)}</a></h2>
