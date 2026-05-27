@@ -782,9 +782,68 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 600px) {
+  /* ── Masthead ── */
+  .masthead { padding: 0 16px; }
+  .masthead__inner { padding: 10px 0 6px; gap: 8px; }
   .masthead__meta { display: none; }
-  .masthead__wordmark { font-size: 28px; }
-  .feed__grid { grid-template-columns: 1fr; }
+  .masthead__wordmark { font-size: 26px; }
+  .masthead__tagline { font-size: 10px; }
+  .masthead__subscribe { font-size: 11px; padding: 5px 10px; letter-spacing: 0.02em; }
+
+  /* ── Nav ── */
+  .nav-bar__inner { padding: 8px 12px; gap: 2px; }
+  .nav-bar__item {
+    padding: 10px 12px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  /* ── Hero ── */
+  .hero { padding: 20px 16px 28px; }
+  .hero__deck { font-size: 16px; }
+  .hero__meta { flex-wrap: wrap; gap: 4px 10px; }
+  .hero__meta-sep { display: none; }
+  .hero__sidebar { padding-top: 24px; }
+
+  /* ── Feed ── */
+  .feed { padding: 28px 16px; }
+  .feed__grid { grid-template-columns: 1fr; gap: 24px; }
+  .card__headline { font-size: 18px; }
+
+  /* ── Filter bar ── */
+  .filter-bar { padding: 10px 16px; }
+  .filter-bar__inner {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+  .filter-bar__inner::-webkit-scrollbar { display: none; }
+  .filter-bar__label { display: none; }
+
+  /* ── Newsletter CTA ── */
+  .newsletter-cta { padding: 32px 16px; }
+
+  /* ── Footer ── */
+  .footer { padding: 28px 16px; }
   .footer__inner { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column; gap: 8px; }
+
+  /* ── Article page ── */
+  .article-layout { padding: 20px 16px 48px; }
+  .article__back { margin-bottom: 20px; }
+  .article__deck { font-size: 17px; }
+  .article__meta { flex-wrap: wrap; gap: 8px; }
+  .article__body { font-size: 17px; }
+  .article__body h2 { font-size: 20px; margin: 32px 0 12px; }
+  .article__body h3 { font-size: 16px; margin: 24px 0 10px; }
+  .article__body blockquote {
+    padding: 6px 0 6px 16px;
+    margin: 24px 0;
+    font-size: 17px;
+  }
+  .article__body ul,
+  .article__body ol { margin-left: 20px; }
 }
