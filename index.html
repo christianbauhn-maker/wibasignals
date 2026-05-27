@@ -168,10 +168,10 @@
   <!-- ─── Nav Bar ─────────────────────────────────────── -->
   <nav class="nav-bar" aria-label="Section navigation">
     <div class="nav-bar__inner">
-      <button class="nav-bar__item active" data-cat="All">All</button>
-      <button class="nav-bar__item" data-cat="The Machine">The Machine</button>
-      <button class="nav-bar__item" data-cat="The Market">The Market</button>
-      <button class="nav-bar__item" data-cat="The Worker">The Worker</button>
+      <button class="nav-bar__item active" data-cat="All" aria-pressed="true">All</button>
+      <button class="nav-bar__item" data-cat="The Machine" aria-pressed="false">The Machine</button>
+      <button class="nav-bar__item" data-cat="The Market" aria-pressed="false">The Market</button>
+      <button class="nav-bar__item" data-cat="The Worker" aria-pressed="false">The Worker</button>
       <button class="nav-bar__item nav-bar__item--coming" disabled aria-disabled="true">Research Briefs <span class="coming-badge">Q3</span></button>
       <button class="nav-bar__item nav-bar__item--coming" disabled aria-disabled="true">Regulation <span class="coming-badge">Q3</span></button>
     </div>
@@ -192,7 +192,7 @@
           <span class="hero__meta-sep">·</span>
           <span>Source: Nvidia SEC / Microsoft / Anthropic / US Census BTOS</span>
           <span class="hero__meta-sep">·</span>
-          <a class="hero__read-link" href="article.html?slug=ai-economy-two-layers">Read &#8594;</a>
+          <a class="hero__read-link" href="article.html?slug=ai-economy-two-layers" aria-label="Read: The AI Economy Has Two Layers. The Market Counts One.">Read &#8594;</a>
         </div>
       </div>
       <!-- Sidebar: recent articles -->
@@ -285,9 +285,9 @@
       <div>
         <p class="footer__col-title">Coverage</p>
         <ul class="footer__links">
-          <li><a href="#" data-filter="The Machine">The Machine</a></li>
-          <li><a href="#" data-filter="The Market">The Market</a></li>
-          <li><a href="#" data-filter="The Worker">The Worker</a></li>
+          <li><button type="button" data-filter="The Machine">The Machine</button></li>
+          <li><button type="button" data-filter="The Market">The Market</button></li>
+          <li><button type="button" data-filter="The Worker">The Worker</button></li>
         </ul>
       </div>
       <div>
