@@ -592,12 +592,20 @@ img { display: block; max-width: 100%; }
 }
 .footer__links { list-style: none; }
 .footer__links li { margin-bottom: 8px; }
-.footer__links a {
+.footer__links a,
+.footer__links button {
   font-size: 13px;
   color: rgba(255,255,255,0.7);
   transition: color 0.15s;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
 }
-.footer__links a:hover { color: #fff; }
+.footer__links a:hover,
+.footer__links button:hover { color: #fff; }
 .footer__bottom {
   max-width: var(--max-w);
   margin: 32px auto 0;
@@ -606,7 +614,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   justify-content: space-between;
   font-size: 11px;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.55);
 }
 
 /* ─── Loading & Empty States ───────────────────────── */
