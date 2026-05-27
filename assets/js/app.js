@@ -70,7 +70,7 @@ function renderHero(articles) {
   if (main) {
     main.innerHTML = `
       <span class="hero__category">${escHtml(featured.category)}</span>
-      <h2 class="hero__headline" onclick="goArticle('${featured.slug}')">${escHtml(featured.title)}</h2>
+      <h2 class="hero__headline"><a href="article.html?slug=${featured.slug}" onclick="goArticle('${featured.slug}'); return false;" style="color:inherit;text-decoration:none;">${escHtml(featured.title)}</a></h2>
       <p class="hero__deck">${escHtml(featured.summary)}</p>
       <div class="hero__meta">
         <span>${escHtml(featured.dateDisplay)}</span>
@@ -79,7 +79,7 @@ function renderHero(articles) {
         <span class="hero__meta-sep">·</span>
         <span>Source: ${escHtml(featured.source)}</span>
         <span class="hero__meta-sep">·</span>
-        <a class="hero__read-link" onclick="goArticle('${featured.slug}')">Read →</a>
+        <a class="hero__read-link" href="article.html?slug=${featured.slug}" onclick="goArticle('${featured.slug}'); return false;">Read →</a>
       </div>
     `;
   }
@@ -123,7 +123,7 @@ function renderGrid(articles) {
   }
 
   grid.innerHTML = gridArticles.map(a => `
-    <article class="card" onclick="goArticle('${a.slug}')">
+    <a class="card" href="article.html?slug=${a.slug}">
       <p class="card__category">${escHtml(a.category)}</p>
       ${a.series ? `<p class="card__series">${escHtml(a.series)} &nbsp;·&nbsp; Part ${a.seriesPart}</p>` : ''}
       <h3 class="card__headline">${escHtml(a.title)}</h3>
@@ -132,7 +132,7 @@ function renderGrid(articles) {
         <span class="byline-pill"><span class="byline-pill__mark">W</span>Wiba Signals</span>
         <span class="card__meta">${escHtml(a.dateDisplay)} &nbsp;&middot;&nbsp; Lvl ${a.sourceLevel}</span>
       </div>
-    </article>
+    </a>
   `).join('');
 }
 
