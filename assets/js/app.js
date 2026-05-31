@@ -293,6 +293,25 @@ async function loadArticle(slug) {
       ).join('');
     }
 
+    // Series navigation
+    const seriesNavEl = document.getElementById('js-series-nav');
+    if (seriesNavEl) {
+      const seriesParts = articles
+        .filter(a => a.series && a.series === article.series)
+        .sort((a, b) => a.seriesPart - b.seriesPart);
+      if (seriesParts.length > 1) {
+        seriesNavEl.innerHTML =
+          `<p class="series-nav__label">${escHtml(article.series)} &nbsp;&middot;&nbsp; ${seriesParts.length}-part series</p>` +
+          seriesParts.map(p => p.slug === article.slug
+            ? `<span class="series-nav__item series-nav__item--current">Part ${p.seriesPart} &nbsp;<span class="series-nav__title">${escHtml(p.title)}</span></span>`
+            : `<a class="series-nav__item" href="article.html?slug=${p.slug}">Part ${p.seriesPart} &nbsp;<span class="series-nav__title">${escHtml(p.title)}</span> &rarr;</a>`
+          ).join('');
+        seriesNavEl.style.display = '';
+      } else {
+        seriesNavEl.style.display = 'none';
+      }
+    }
+
     // Show content, hide skeleton
     document.getElementById('js-skeleton').style.display = 'none';
     document.getElementById('js-content').style.display = '';
