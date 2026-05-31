@@ -853,3 +853,41 @@ img { display: block; max-width: 100%; }
   .article__body ul,
   .article__body ol { margin-left: 20px; }
 }
+
+/* ─── Series Navigation ───────────────────────────────── */
+.series-nav {
+  margin: 40px 0 32px;
+  padding: 20px 24px;
+  background: var(--color-surface);
+  border-left: 3px solid var(--color-teal);
+  border-radius: 0 4px 4px 0;
+}
+.series-nav__label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 14px;
+}
+.series-nav__item {
+  display: block;
+  font-size: 14px;
+  padding: 6px 0;
+  border-top: 1px solid var(--color-border);
+  text-decoration: none;
+  color: var(--color-teal);
+  line-height: 1.4;
+}
+.series-nav__item:first-of-type { border-top: none; }
+.series-nav__item--current {
+  color: var(--color-text);
+  font-weight: 600;
+  cursor: default;
+}
+.series-nav__title {
+  font-weight: 400;
+}
+.series-nav__item:not(.series-nav__item--current):hover .series-nav__title {
+  text-decoration: underline;
+}
