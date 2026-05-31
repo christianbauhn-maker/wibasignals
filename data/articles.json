@@ -5,7 +5,7 @@
       "slug": "eu-ai-act-asymmetry",
       "title": "The Regulation Targets the Wrong Problem",
       "summary": "The EU AI Act requires extensive compliance documentation before deploying an AI system that screens job applicants. The automated system that eliminated the need to hire those applicants in the first place operates under a different framework entirely.",
-      "body": "<p>The EU AI Act's obligations for high-risk AI systems were designed to become binding on August 2, 2026. A political agreement reached on May 7, 2026 extended that deadline by sixteen months &mdash; to December 2, 2027 &mdash; for new or substantially modified deployments, in response to industry readiness concerns. For organizations already running AI systems that screen job applicants, monitor employee performance, or rank candidates for promotion, compliance obligations remain. The core architecture of the regulation, and the asymmetry it produces, is unchanged by the delay.</p><p>For the factory floor replacing those workers, different rules apply.</p><h2>The Annex III Problem</h2><p>The AI Act's Annex III defines which AI systems are classified as high-risk. The list has eight categories. Read through them: biometric identification, critical infrastructure management, education, employment and workforce management, access to essential services, law enforcement, migration and border control, and justice administration.</p><p>Every category describes a digital or service-delivery context. None describes the industrial shop floor.</p><p>This is not a gap by oversight. It reflects a deliberate architectural choice in how the regulation was structured.</p><p>The employment category &mdash; arguably the one most directly tied to labor market outcomes &mdash; lists as high-risk: AI used for recruitment or selection, for monitoring and evaluating employee performance, and for making decisions on promotion, termination, or task allocation. An AI system sorting CVs at a logistics firm and ranking candidates for a warehouse position falls squarely inside Annex III. It requires a full compliance stack before deployment.</p><p>The automated warehouse system that eliminates the need to hire those candidates in the first place does not.</p><h2>Two Frameworks, One Labor Market</h2><p>Industrial automation machinery &mdash; robots, automated guided vehicles, CNC systems, autonomous assembly lines &mdash; is governed by Machinery Regulation 2023/1230, which replaced the Machinery Directive and became applicable in January 2027. Its compliance requirements center on physical safety: CE certification, risk assessment for mechanical, electrical, and thermal hazards, and documentation of guards and emergency stops.</p><p>The regulation does not require disclosure of projected job displacement. It does not mandate accounting for labor transition costs. It contains no mechanism for measuring or reporting automation-driven reductions in headcount.</p><p>The EU itself has clarified the boundary: \"in areas of overlap, AI-related health and safety requirements are addressed within the Machinery Regulation rather than under the EU AI Act.\" The two regimes are designed not to overlap &mdash; the delineation is intentional.</p><p>The result is a regulatory architecture in which the sector with the lightest compliance burden &mdash; industrial automation &mdash; drives the largest structural changes to employment. And the sector carrying the heaviest compliance requirements &mdash; SME-level service AI &mdash; operates at the smallest scale of actual displacement.</p><h2>Who Carries the Cost</h2><p>Compliance with the AI Act's high-risk framework is not trivial. According to analysis by Bird &amp; Bird, deploying a high-risk AI system requires: technical documentation, a conformity assessment procedure, a quality management system, a post-market monitoring plan, and, in many cases, registration in the EU database for high-risk AI before first deployment.</p><p>For large enterprises with legal and compliance infrastructure, this is an integration exercise. For small and medium-sized enterprises deploying AI in HR or customer management contexts, it represents a substantive cost without precedent in prior enterprise software regulation.</p><p>The IAPP's 2024 research identified SME deployers &mdash; not developers, but deployers &mdash; as the group least prepared for the Act's requirements, with the largest gaps in governance documentation and the fewest dedicated compliance resources.</p><p>Meanwhile, the operators of large-scale automated facilities are completing CE certification processes that have existed, in some form, since 1995.</p><h2>What the Carnegie Research Shows</h2><p>Research on the EU's regulatory architecture &mdash; including work by the Carnegie Endowment for International Peace on European labor transitions and formal positions from the European Trade Union Confederation &mdash; identifies a structural gap: the AI Act applies to AI systems that <em>manage</em> workers; it does not apply to AI systems that <em>replace</em> them. There is no EU mechanism requiring an employer to report, justify, or mitigate the labor market effects of deploying automated systems that reduce headcount at scale.</p><p>The European Trade Union Confederation has pressed for inclusion of AI-driven displacement in the regulatory framework. As of the Act's full enforcement date, that inclusion has not occurred.</p><h2>The Numbers in Parallel</h2><p>Against the backdrop of this regulatory architecture, two investment figures sit side by side.</p><p>Global hyperscaler capital expenditure in AI infrastructure &mdash; the hardware layer enabling the automation systems exempt from displacement reporting &mdash; is tracking toward $650 to $700 billion in 2026, based on Q1 2026 earnings guidance from Meta, Microsoft, Alphabet, and Amazon. The figure has been revised upward multiple times this year as each company reported quarterly results. The physical output of that spending is data centers, power infrastructure, and AI accelerator hardware increasingly directed at robotic and industrial automation applications.</p><p>The compliance obligations on the other side of the ledger fall on organizations deploying AI tools to the 3 to 4 percent of enterprises currently using AI as a production technology &mdash; the Census Bureau's figure for the United States, with European adoption rates in the comparable range &mdash; and specifically on the subset of those organizations whose tools touch employment or service allocation decisions.</p><h2>Two Systems, One Date</h2><p>August 2, 2026 arrives with two parallel realities.</p><p>A small business deploying an AI-assisted hiring tool is legally required to maintain conformity assessment documentation, implement human oversight procedures, and register in the EU database before putting the system into use.</p><p>A manufacturer deploying an AI-integrated assembly line that will eliminate twenty production roles submits CE documentation for mechanical and electrical safety.</p><p>Both are compliant.</p><p><em>Sources: EU AI Act Annex III (Regulation EU 2024/1689); EU AI Act Omnibus political agreement, 7 May 2026 (consilium.europa.eu); Machinery Regulation 2023/1230 (EUR-Lex); Bird &amp; Bird EU AI Act compliance analysis; IAPP, \"EU agrees to amend AI Act, clarifies overlap with machinery rules\"; Carnegie Endowment for International Peace, \"How Europe Can Survive the AI Labor Transition\" (February 2026); European Trade Union Confederation AI Act position papers; Census Bureau Business Trends and Outlook Survey (BTOS).</em></p>",
+      "body": "<p>The EU AI Act's obligations for high-risk AI systems were designed to become binding on August 2, 2026. A political agreement reached on May 7, 2026 extended that deadline by sixteen months &mdash; to December 2, 2027 &mdash; for new or substantially modified deployments, in response to industry readiness concerns. For organizations already running AI systems that screen job applicants, monitor employee performance, or rank candidates for promotion, compliance obligations remain. The core architecture of the regulation, and the asymmetry it produces, is unchanged by the delay.</p><p>For the factory floor replacing those workers, different rules apply.</p><h2>The Annex III Problem</h2><p>The AI Act's Annex III defines which AI systems are classified as high-risk. The list has eight categories. Read through them: biometric identification, critical infrastructure management, education, employment and workforce management, access to essential services, law enforcement, migration and border control, and justice administration.</p><p>Every category describes a digital or service-delivery context. None describes the industrial shop floor.</p><p>This is not a gap by oversight. It reflects a deliberate architectural choice in how the regulation was structured.</p><p>The employment category &mdash; arguably the one most directly tied to labor market outcomes &mdash; lists as high-risk: AI used for recruitment or selection, for monitoring and evaluating employee performance, and for making decisions on promotion, termination, or task allocation. An AI system sorting CVs at a logistics firm and ranking candidates for a warehouse position falls squarely inside Annex III. It requires a full compliance stack before deployment.</p><p>The automated warehouse system that eliminates the need to hire those candidates in the first place does not.</p><h2>Two Frameworks, One Labor Market</h2><p>Industrial automation machinery &mdash; robots, automated guided vehicles, CNC systems, autonomous assembly lines &mdash; is governed by Machinery Regulation 2023/1230, which replaced the Machinery Directive and became applicable in January 2027. Its compliance requirements center on physical safety: CE certification, risk assessment for mechanical, electrical, and thermal hazards, and documentation of guards and emergency stops.</p><p>The regulation does not require disclosure of projected job displacement. It does not mandate accounting for labor transition costs. It contains no mechanism for measuring or reporting automation-driven reductions in headcount.</p><p>The EU itself has clarified the boundary: \"in areas of overlap, AI-related health and safety requirements are addressed within the Machinery Regulation rather than under the EU AI Act.\" The two regimes are designed not to overlap &mdash; the delineation is intentional.</p><p>The result is a regulatory architecture in which the sector with the lightest compliance burden &mdash; industrial automation &mdash; drives the largest structural changes to employment. And the sector carrying the heaviest compliance requirements &mdash; SME-level service AI &mdash; operates at the smallest scale of actual displacement.</p><h2>Who Carries the Cost</h2><p>Compliance with the AI Act's high-risk framework is not trivial. According to analysis by Bird &amp; Bird, deploying a high-risk AI system requires: technical documentation, a conformity assessment procedure, a quality management system, a post-market monitoring plan, and, in many cases, registration in the EU database for high-risk AI before first deployment.</p><p>For large enterprises with legal and compliance infrastructure, this is an integration exercise. For small and medium-sized enterprises deploying AI in HR or customer management contexts, it represents a substantive cost without precedent in prior enterprise software regulation.</p><p>The IAPP's 2024 research identified SME deployers &mdash; not developers, but deployers &mdash; as the group least prepared for the Act's requirements, with the largest gaps in governance documentation and the fewest dedicated compliance resources.</p><p>Meanwhile, the operators of large-scale automated facilities are completing CE certification processes that have existed, in some form, since 1995.</p><h2>What the Carnegie Research Shows</h2><p>Research on the EU's regulatory architecture &mdash; including work by the Carnegie Endowment for International Peace on European labor transitions and formal positions from the European Trade Union Confederation &mdash; identifies a structural gap: the AI Act applies to AI systems that <em>manage</em> workers; it does not apply to AI systems that <em>replace</em> them. There is no EU mechanism requiring an employer to report, justify, or mitigate the labor market effects of deploying automated systems that reduce headcount at scale.</p><p>The European Trade Union Confederation has pressed for inclusion of AI-driven displacement in the regulatory framework. As of the Act's full enforcement date, that inclusion has not occurred.</p><h2>The Numbers in Parallel</h2><p>Against the backdrop of this regulatory architecture, two investment figures sit side by side.</p><p>Global hyperscaler capital expenditure in AI infrastructure &mdash; the hardware layer enabling the automation systems exempt from displacement reporting &mdash; is tracking toward $650 to $700 billion in 2026, based on Q1 2026 earnings guidance from Meta, Microsoft, Alphabet, and Amazon. The figure has been revised upward multiple times this year as each company reported quarterly results. The physical output of that spending is data centers, power infrastructure, and AI accelerator hardware increasingly directed at robotic and industrial automation applications.</p><p>The compliance obligations on the other side of the ledger fall on organizations deploying AI tools to the 3 to 4 percent of enterprises currently using AI as a production technology &mdash; the Census Bureau's figure for the United States, with European adoption rates in the comparable range &mdash; and specifically on the subset of those organizations whose tools touch employment or service allocation decisions.</p><h2>Two Systems, One Date</h2><p>August 2, 2026 arrives with two parallel realities.</p><p>A small business deploying an AI-assisted hiring tool is legally required to maintain conformity assessment documentation, implement human oversight procedures, and register in the EU database before putting the system into use.</p><p>A manufacturer deploying an AI-integrated assembly line that will eliminate twenty production roles submits CE documentation for mechanical and electrical safety.</p><p>Both are compliant.</p>",
       "category": "The Machine",
       "date": "2026-05-24",
       "dateDisplay": "May 24, 2026",
@@ -19,7 +19,25 @@
         "Regulation"
       ],
       "featured": false,
-      "ogImage": "/assets/og/eu-ai-act-asymmetry.jpg"
+      "ogImage": "/assets/og/eu-ai-act-asymmetry.jpg",
+      "sources": [
+        {
+          "name": "EU AI Act (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+        },
+        {
+          "name": "EU AI Act Omnibus (consilium.europa.eu)",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-reaches-political-agreement-on-the-omnibus-simplification-package/"
+        },
+        {
+          "name": "Bird & Bird",
+          "url": "https://www.twobirds.com/en/insights/2025/belgium/first-ever-dma-non-compliance-fines-%E2%80%93-another-step-in-big-tech-scrutiny"
+        },
+        {
+          "name": "Carnegie Endowment",
+          "url": "https://carnegieendowment.org/research/2026/02/how-europe-can-survive-the-ai-labor-transition"
+        }
+      ]
     },
     {
       "id": "ai-economy-two-layers",
@@ -40,7 +58,25 @@
         "Enterprise AI"
       ],
       "featured": true,
-      "ogImage": "/assets/og/ai-economy-two-layers.jpg"
+      "ogImage": "/assets/og/ai-economy-two-layers.jpg",
+      "sources": [
+        {
+          "name": "Nvidia SEC",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NVDA&type=8-K&dateb=&owner=include&count=40"
+        },
+        {
+          "name": "Microsoft",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/"
+        },
+        {
+          "name": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "name": "US Census BTOS",
+          "url": "https://www.census.gov/data/experimental-data-products/business-trends-and-outlook-survey.html"
+        }
+      ]
     },
     {
       "id": "ai-measurement-problem",
@@ -61,7 +97,21 @@
         "Methodology"
       ],
       "featured": false,
-      "ogImage": "/assets/og/ai-measurement-problem.jpg"
+      "ogImage": "/assets/og/ai-measurement-problem.jpg",
+      "sources": [
+        {
+          "name": "Eurostat",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises"
+        },
+        {
+          "name": "McKinsey",
+          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+        },
+        {
+          "name": "BCG",
+          "url": "https://www.bcg.com/publications/2024/ai-at-work-report"
+        }
+      ]
     },
     {
       "id": "ai-roi-reckoning",
@@ -82,7 +132,17 @@
       ],
       "featured": false,
       "readingTime": 3,
-      "ogImage": "/assets/og/ai-roi-reckoning.jpg"
+      "ogImage": "/assets/og/ai-roi-reckoning.jpg",
+      "sources": [
+        {
+          "name": "NBER Working Paper 34836",
+          "url": "https://www.nber.org/papers/w34836"
+        },
+        {
+          "name": "The TechReport",
+          "url": "https://thetechreport.com"
+        }
+      ]
     },
     {
       "id": "china-ai-layoffs-illegal",
@@ -208,7 +268,13 @@
       ],
       "featured": false,
       "readingTime": 3,
-      "ogImage": "/assets/og/gartner-ai-layoffs-zero-gain.jpg"
+      "ogImage": "/assets/og/gartner-ai-layoffs-zero-gain.jpg",
+      "sources": [
+        {
+          "name": "Gartner Research",
+          "url": "https://www.gartner.com/en/newsroom/press-releases"
+        }
+      ]
     },
     {
       "id": "graduate-unemployment-ai",
@@ -278,7 +344,7 @@
       "slug": "keep-em-waiting-part-1",
       "title": "The Silence That Was Louder Than Any Tariff",
       "summary": "On April 9, 2025, the bond market taught every US trading partner the same lesson — there is a price at which Trump folds. The thirteen months of European silence that followed were not weakness but a calculated bet that American courts and American markets would do Europe's enforcement work for free.",
-      "body": "<p>At 9:37 a.m. on April 9, 2025, Donald Trump posted to Truth Social that he was pausing most of his Liberation Day tariffs for ninety days. The S&amp;P 500 rose 9.52% in a single session [trade-001]. The bond market had done in seventy-two hours what diplomatic protests, WTO filings, and 186 nations' complaints had failed to do: it found the price at which Trump folds.</p><p>Every major trading partner noticed. EU officials who had been preparing a €93 billion retaliation package put it back in the drawer [trade-004]. Japan, South Korea, and the United Kingdom continued negotiations without escalating. None of them announced this as strategy. None of them needed to. The pause had confirmed what Wall Street had already named: TACO — Trump Always Chickens Out [trade-007].</p><p>The silence that followed was deliberate. Arthur Leichthammer and Etienne Höra at the Jacques Delors Centre documented four reasons EU policymakers chose restraint over retaliation [trade-007]. First, coordinating twenty-seven member states with radically different trade exposures — Ireland at 12.5% of GDP in US export dependency versus Cyprus at 0.16% — takes time that aggressive posturing would not allow. Second, the Ukraine variable: Europe could not afford to antagonize Washington while depending on US military support for Kyiv. Third, the TACO calculation itself — if Trump folds under financial pressure, the most effective response is to wait for the next market signal. Fourth, the judicial bet: the Liberation Day tariffs were built on a novel legal theory under the International Emergency Economic Powers Act, and American courts were already examining it.</p><p>The judicial bet paid off. On February 20, 2026, the Supreme Court ruled 6-3 that the IEEPA tariffs were unlawful. The majority found that Congress had not authorized the President to impose tariffs under the Act — that emergency economic powers did not extend to rewriting the entire structure of US trade relations [trade-003]. Approximately $166–179 billion had been collected from roughly 330,000 American businesses. The Court's ruling opened a refund process with no modern precedent for scale.</p><p>The counter-argument deserves honest presentation. China did not wait. Beijing imposed aggressive retaliatory tariffs and restricted rare earth exports — and the result was a negotiated 90-day truce by May 2025. The EU's softer approach produced the Turnberry framework in July 2025: a 15% EU tariff rate on most goods (steel and aluminum remained at 50%), a pledge of zero tariffs on US industrial goods, and a $600 billion private investment commitment that no one has any mechanism to enforce [trade-002, trade-008]. The UK reached a deal; Trump reimposed steel and aluminum tariffs on British exporters twelve days later [trade-007]. Ignacio García Bercero at Bruegel argues plainly that EU silence cost commercial leverage while China's aggression extracted concessions [trade-004]. The Delors Centre acknowledges the tradeoff: EU policymakers prioritized geopolitical stability over the best possible trade terms. That is a defensible choice. It is not a costless one.</p><p>On the same day the Supreme Court issued its IEEPA ruling, the Trump administration invoked Section 122 of the Trade Act of 1974 — a balance-of-payments provision written in the aftermath of the Nixon shock and Bretton Woods collapse — to impose a 10% global tariff with a 150-day ceiling [trade-003]. On May 7, 2026, the Court of International Trade ruled 2-1 that Section 122 was equally unlawful: the monetary conditions that justified the provision in 1974 no longer exist in 2026 [trade-006]. The Federal Circuit issued an administrative stay on May 12, keeping tariffs in place during appeal. Section 122 expires by statute on July 24, 2026 regardless of any court outcome. Every tariff mechanism the administration has invoked has been struck down within nine months.</p><p>What remains is structurally different from what came before. Section 232 — the national security authority covering steel, aluminum, and automobiles at 25% — is legally intact, carries no rate caps, and has no expiry date [trade-006]. Section 301, used historically against Chinese intellectual property violations, has been applied to sixteen economies under overcapacity grounds and sixty countries under forced labor provisions. More consequentially, the administration initiated Section 301 investigations in March 2026 targeting the EU's Digital Services Act, Digital Markets Act, GDPR, and digital services taxes [trade-004]. Unlike Liberation Day and Section 122, Section 301 has no ceiling on tariff rates and no built-in expiry. The next trade confrontation with Europe is not about goods. It is about regulatory sovereignty.</p><p>Philip Marey at Rabobank provides the structural frame for what comes next [trade-005]. The midterm elections on November 3, 2026 — all 435 House seats, 35 Senate seats — function as a political ceiling on tariff escalation. Inflation from 2025 tariffs is registering in household budgets now, precisely the window that shapes election-year polling. Marey's base case — that the administration will ease tariff pressure in the months before November to claim credit for economic stabilization — is consistent with the agricultural tariff reversals of November 2025 and with the Section 122 collapse. The caveat is significant: Marey calls this the 'Donroe Doctrine,' a frame he constructed from the November 2025 National Security Strategy, not a term the administration itself uses [trade-005]. Modeling Trump's behavior with rational-actor logic has a documented failure rate. Scenario A — continued escalation that ignores political feedback — remains in play.</p><p>The silence of 2025 was the correct call under the conditions that existed. Three simultaneous pressures — market discipline, institutional legal review, and the electoral calendar — created a window where waiting outperformed retaliating. That window closes as Section 232 and Section 301 become the operative instruments. Courts cannot strike down Section 232; it has withstood constitutional challenges. Section 301 against digital regulation does not have a balance-of-payments definition problem — it has no limiting principle at all. The trading partners who won by waiting will need a different strategy for what comes next.</p><p><em>Analysis synthesized by Claude Opus · 7 primary sources, Tier 1–2 · Sources cited above</em></p>",
+      "body": "<p>At 9:37 a.m. on April 9, 2025, Donald Trump posted to Truth Social that he was pausing most of his Liberation Day tariffs for ninety days. The S&amp;P 500 rose 9.52% in a single session [trade-001]. The bond market had done in seventy-two hours what diplomatic protests, WTO filings, and 186 nations' complaints had failed to do: it found the price at which Trump folds.</p><p>Every major trading partner noticed. EU officials who had been preparing a €93 billion retaliation package put it back in the drawer [trade-004]. Japan, South Korea, and the United Kingdom continued negotiations without escalating. None of them announced this as strategy. None of them needed to. The pause had confirmed what Wall Street had already named: TACO — Trump Always Chickens Out [trade-007].</p><p>The silence that followed was deliberate. Arthur Leichthammer and Etienne Höra at the Jacques Delors Centre documented four reasons EU policymakers chose restraint over retaliation [trade-007]. First, coordinating twenty-seven member states with radically different trade exposures — Ireland at 12.5% of GDP in US export dependency versus Cyprus at 0.16% — takes time that aggressive posturing would not allow. Second, the Ukraine variable: Europe could not afford to antagonize Washington while depending on US military support for Kyiv. Third, the TACO calculation itself — if Trump folds under financial pressure, the most effective response is to wait for the next market signal. Fourth, the judicial bet: the Liberation Day tariffs were built on a novel legal theory under the International Emergency Economic Powers Act, and American courts were already examining it.</p><p>The judicial bet paid off. On February 20, 2026, the Supreme Court ruled 6-3 that the IEEPA tariffs were unlawful. The majority found that Congress had not authorized the President to impose tariffs under the Act — that emergency economic powers did not extend to rewriting the entire structure of US trade relations [trade-003]. Approximately $166–179 billion had been collected from roughly 330,000 American businesses. The Court's ruling opened a refund process with no modern precedent for scale.</p><p>The counter-argument deserves honest presentation. China did not wait. Beijing imposed aggressive retaliatory tariffs and restricted rare earth exports — and the result was a negotiated 90-day truce by May 2025. The EU's softer approach produced the Turnberry framework in July 2025: a 15% EU tariff rate on most goods (steel and aluminum remained at 50%), a pledge of zero tariffs on US industrial goods, and a $600 billion private investment commitment that no one has any mechanism to enforce [trade-002, trade-008]. The UK reached a deal; Trump reimposed steel and aluminum tariffs on British exporters twelve days later [trade-007]. Ignacio García Bercero at Bruegel argues plainly that EU silence cost commercial leverage while China's aggression extracted concessions [trade-004]. The Delors Centre acknowledges the tradeoff: EU policymakers prioritized geopolitical stability over the best possible trade terms. That is a defensible choice. It is not a costless one.</p><p>On the same day the Supreme Court issued its IEEPA ruling, the Trump administration invoked Section 122 of the Trade Act of 1974 — a balance-of-payments provision written in the aftermath of the Nixon shock and Bretton Woods collapse — to impose a 10% global tariff with a 150-day ceiling [trade-003]. On May 7, 2026, the Court of International Trade ruled 2-1 that Section 122 was equally unlawful: the monetary conditions that justified the provision in 1974 no longer exist in 2026 [trade-006]. The Federal Circuit issued an administrative stay on May 12, keeping tariffs in place during appeal. Section 122 expires by statute on July 24, 2026 regardless of any court outcome. Every tariff mechanism the administration has invoked has been struck down within nine months.</p><p>What remains is structurally different from what came before. Section 232 — the national security authority covering steel, aluminum, and automobiles at 25% — is legally intact, carries no rate caps, and has no expiry date [trade-006]. Section 301, used historically against Chinese intellectual property violations, has been applied to sixteen economies under overcapacity grounds and sixty countries under forced labor provisions. More consequentially, the administration initiated Section 301 investigations in March 2026 targeting the EU's Digital Services Act, Digital Markets Act, GDPR, and digital services taxes [trade-004]. Unlike Liberation Day and Section 122, Section 301 has no ceiling on tariff rates and no built-in expiry. The next trade confrontation with Europe is not about goods. It is about regulatory sovereignty.</p><p>Philip Marey at Rabobank provides the structural frame for what comes next [trade-005]. The midterm elections on November 3, 2026 — all 435 House seats, 35 Senate seats — function as a political ceiling on tariff escalation. Inflation from 2025 tariffs is registering in household budgets now, precisely the window that shapes election-year polling. Marey's base case — that the administration will ease tariff pressure in the months before November to claim credit for economic stabilization — is consistent with the agricultural tariff reversals of November 2025 and with the Section 122 collapse. The caveat is significant: Marey calls this the 'Donroe Doctrine,' a frame he constructed from the November 2025 National Security Strategy, not a term the administration itself uses [trade-005]. Modeling Trump's behavior with rational-actor logic has a documented failure rate. Scenario A — continued escalation that ignores political feedback — remains in play.</p><p>The silence of 2025 was the correct call under the conditions that existed. Three simultaneous pressures — market discipline, institutional legal review, and the electoral calendar — created a window where waiting outperformed retaliating. That window closes as Section 232 and Section 301 become the operative instruments. Courts cannot strike down Section 232; it has withstood constitutional challenges. Section 301 against digital regulation does not have a balance-of-payments definition problem — it has no limiting principle at all. The trading partners who won by waiting will need a different strategy for what comes next.</p>",
       "category": "The Market",
       "date": "2026-05-19",
       "dateDisplay": "May 19, 2026",
@@ -295,7 +361,29 @@
       "seriesPart": 1,
       "featured": false,
       "readingTime": 6,
-      "ogImage": "/assets/og/keep-em-waiting-part-1.jpg"
+      "ogImage": "/assets/og/keep-em-waiting-part-1.jpg",
+      "sources": [
+        {
+          "name": "WilmerHale",
+          "url": "https://www.wilmerhale.com/insights/client-alerts/2026-02-20-supreme-court-strikes-down-tariffs-imposed-under-ieepa"
+        },
+        {
+          "name": "Gibson Dunn",
+          "url": "https://www.gibsondunn.com/section-122-global-tariffs-invalidated-by-the-court-of-international-trade-ruling-and-next-steps/"
+        },
+        {
+          "name": "Bruegel",
+          "url": "https://www.bruegel.org/first-glance/eu-trade-strategy-ieepa-supreme-court-ruling"
+        },
+        {
+          "name": "Rabobank",
+          "url": "https://economics.rabobank.com/publications/2026/february/donroe-doctrine/"
+        },
+        {
+          "name": "Jacques Delors Centre",
+          "url": "https://www.delorscentre.eu/en/publications/detail/publication/red-lines-and-retaliation-the-eus-response-to-trumps-tariffs"
+        }
+      ]
     },
     {
       "id": "swedish-sme-chatbot-trap",
@@ -337,7 +425,13 @@
       ],
       "featured": false,
       "readingTime": 5,
-      "ogImage": "/assets/og/productivity-paradox-measurement.jpg"
+      "ogImage": "/assets/og/productivity-paradox-measurement.jpg",
+      "sources": [
+        {
+          "name": "NBER Working Paper 34836",
+          "url": "https://www.nber.org/papers/w34836"
+        }
+      ]
     },
     {
       "id": "sweden-distribution-problem",
@@ -358,7 +452,21 @@
       ],
       "featured": false,
       "readingTime": 4,
-      "ogImage": "/assets/og/sweden-distribution-problem.jpg"
+      "ogImage": "/assets/og/sweden-distribution-problem.jpg",
+      "sources": [
+        {
+          "name": "SCB",
+          "url": "https://www.scb.se"
+        },
+        {
+          "name": "Eurostat",
+          "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises"
+        },
+        {
+          "name": "Stanford HAI",
+          "url": "https://aiindex.stanford.edu"
+        }
+      ]
     },
     {
       "id": "career-ladder-bottom-rung",
@@ -379,7 +487,25 @@
       ],
       "featured": false,
       "readingTime": 5,
-      "ogImage": "/assets/og/career-ladder-bottom-rung.jpg"
+      "ogImage": "/assets/og/career-ladder-bottom-rung.jpg",
+      "sources": [
+        {
+          "name": "WEF Future of Jobs 2025",
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/"
+        },
+        {
+          "name": "ILO",
+          "url": "https://www.ilo.org"
+        },
+        {
+          "name": "Stanford HAI",
+          "url": "https://aiindex.stanford.edu"
+        },
+        {
+          "name": "OECD-GPAI",
+          "url": "https://www.oecd.org/en/topics/sub-issues/ai-and-the-labour-market.html"
+        }
+      ]
     },
     {
       "id": "ai-can-read-its-own-thoughts",
@@ -400,14 +526,20 @@
       ],
       "featured": false,
       "readingTime": 4,
-      "ogImage": "/assets/og/ai-can-read-its-own-thoughts.jpg"
+      "ogImage": "/assets/og/ai-can-read-its-own-thoughts.jpg",
+      "sources": [
+        {
+          "name": "Anthropic Research",
+          "url": "https://www.anthropic.com/research"
+        }
+      ]
     },
     {
       "id": "keep-em-waiting-part-2",
       "slug": "keep-em-waiting-part-2",
       "title": "Von der Leyen Read Her Sun Tzu",
       "summary": "While analysts waited for Europe to threaten back, Europe had already stopped needing to. The thirteen months of silence were not patience — they were construction. Five simultaneous infrastructure projects, executed without triggering a single WTO dispute, have changed the ground on which the next confrontation will be fought.",
-      "body": "<p>Sun Tzu wrote that victorious warriors win first and then go to war. On May 27, 2026, the European Commission presented its Tech Sovereignty Package — a set of measures restricting US cloud providers from handling sensitive government data — on the same day it published a satellite spectrum proposal structurally limiting Starlink's European expansion. Neither document was a countermeasure. They were the latest pieces of an architecture that has been under construction since before Liberation Day.</p><p>The conventional analysis of EU-US trade relations throughout 2025 and into 2026 focused on what Europe might do: whether it would activate its Anti-Coercion Instrument, reintroduce the suspended €93 billion retaliation package, or escalate at the WTO. That frame asked the wrong question. The correct question was what Europe had already done — and whether the United States had the legal instruments to reverse it.</p><p>Between April and December 2025, European regulators collected €3.77 billion in fines from US technology companies under the Digital Markets Act and Digital Services Act: €500 million from Apple, €200 million from Meta, €2.95 billion from Google in an antitrust ruling, and €120 million from X in the first-ever DSA non-compliance decision [digital-001]. The fine totals are not the instrument that matters. The conduct requirements attached to them are.</p><p>Meta redesigned its European advertising model after the DMA ruling — users can now explicitly consent or receive a less personalized experience, with the Commission monitoring compliance on a rolling basis. Apple was forced to open its App Store to third-party alternatives across EU markets. Amazon lost its General Court challenge against its Very Large Online Platform designation under the DSA, cementing transparency audits and content moderation obligations with no expiry date and no exit mechanism short of withdrawing from the European market [digital-001]. These changes are structural. They do not reverse when a tariff negotiation concludes.</p><p>The second front was less visible and more consequential. The EU Data Act entered full application in September 2025 [digital-002]. Chapter VII requires cloud providers operating in the EU to implement technical, legal, and organizational measures preventing non-EU governments from accessing non-personal data stored in Europe where such access would be unlawful under EU law. The target is explicit: the United States CLOUD Act of 2018, which authorizes US federal law enforcement to compel American-headquartered companies to disclose data regardless of storage location. Every AWS server in Frankfurt, every Azure datacenter in Amsterdam, is reachable under US law. Chapter VII is the EU's legal answer to that fact.</p><p>On May 7, CNBC reported that the Commission was preparing rules to restrict EU member governments' use of US cloud platforms for sensitive data in healthcare, finance, and judicial systems [digital-003]. The Tech Sovereignty Package presented on May 27 formalized that direction with the Cloud and AI Development Act and Chips Act 2.0. The mechanism is procurement, not prohibition. AWS, Azure, and Google Cloud are not banned — they are progressively excluded from the workloads where European governments cannot accept CLOUD Act exposure. A Commission spokesperson told CNBC the package was \"about Europe waking up and getting its act together.\" The result is equivalent to a ban on the most strategically sensitive use cases, achieved without triggering a single WTO dispute.</p><p>The third front received the least analytical attention. The European Payments Initiative launched Wero in 2024. By February 2026, EPI had signed a memorandum of understanding with the EuroPA Alliance — Bizum in Spain, MB WAY in Portugal, Vipps MobilePay in the Nordics, Bancomat in Italy — connecting approximately 130 million users across thirteen countries, covering roughly 72 percent of the EU and Norwegian population [digital-004]. Wero passed 50 million registered users in Belgium, France, and Germany by February 2026. Lidl, Decathlon, Rossmann, and Air Europa accept it at checkout. €7.5 billion in transfers processed as of September 2025.</p><p>The EU's Interchange Fee Regulation already caps Visa and Mastercard's consumer interchange fees at 0.2–0.3 percent. The scheme fees and processing charges that migrated outside the regulation's scope are under active scrutiny [digital-004]. The payment infrastructure alternative is not a pilot. It is live, it is scaling, and the February 2026 EuroPA MoU changed its trajectory from a regional product to a continental network in a single signature.</p><p>The fourth front arrived on the same day as the Tech Sovereignty Package. On May 27, the Commission proposed reserving two-thirds of the 2 GHz satellite frequency band for European operators, with Starlink eligible to bid only for a share of the remaining third [digital-005]. BNP Paribas equity research described the proposal as placing Starlink in a \"structurally inferior position\" in the European market. The US Federal Communications Commission formally objected. That objection confirms the measure landed where it was aimed.</p><p>The EU's IRIS2 constellation — 290 satellites across multiple orbits, initial services targeted for 2029 with full operations from 2030–2031 — is the structural alternative the spectrum reservation protects [digital-005]. IRIS2 was conceived as a defense and connectivity project. It has become a sovereignty instrument. Reserving the bandwidth now means that by the time IRIS2 is operational, the European market position Starlink would otherwise have locked in will not exist.</p><p>The fifth front is the only one where the pressure shows. The EU AI Act's most significant compliance requirements were set to take effect in August 2026 for US companies operating high-risk AI systems accessible from Europe — extraterritorial reach, fines up to €35 million or 7 percent of global annual revenue, no incorporation loophole [digital-006]. Then the European Parliament voted to explore pushing the deadline to December 2027. The delay is attributed in part to lobbying from US tech companies and the Trump administration.</p><p>That is precisely what makes it the most revealing data point in this analysis. The Data Act is law. Wero's EuroPA network exists. The satellite spectrum allocation is published. Section 301 cannot reach back and un-pass any of them. The AI Act is the one front that has not yet cleared the Council of the European Union — and it is the one front where US leverage is visibly working in real time. The political fight is happening now, in Brussels committee rooms that rarely attract attention outside election cycles. Whether the Council holds the August deadline or grants the delay will determine whether Europe's AI sovereignty architecture is completed before the next wave of US platform expansion arrives, or after it.</p><p><em>Wiba Signals is tracking the Council vote.</em></p><p>The counter-argument deserves honest presentation. Bruegel Senior Fellow Bertin Martens documented in April 2025 that the EU's primary trade countermeasure — the Anti-Coercion Instrument — cannot effectively target US digital platforms because Apple, Google, Meta, and Amazon all hold legal establishments in Ireland or Luxembourg, qualifying as entities with \"substantive presence\" in the EU under the ACI's own definitions [digital-007]. The trade bazooka cannot fire at the targets that matter most. Ignacio García Bercero at Bruegel recommended in February 2026 that the EU deploy the ACI if Section 301 investigations materialize into tariffs against EU digital regulation — a defensible escalation path [digital-008]. But the procurement mechanism in the Tech Sovereignty Package does not require ACI at all. Procurement rules do not classify a platform as foreign. They classify data as sensitive. The legal instrument is different. The structural outcome is the same.</p><p>None of this is complete. IRIS2 is not operational until 2029. Wero operates in three countries. CADA has not yet cleared the Council of the European Union. The remaining dependencies — in enterprise software, advertising infrastructure, developer tooling — will take years to unwind at current trajectory. And the Section 301 investigations launched in March 2026, targeting the DSA, DMA, GDPR, and digital services taxes directly, represent a US attempt to use trade law to dismantle the regulatory instruments that underpin this entire strategy [digital-009]. Section 122 expires by statute on July 24 — the 150-day ceiling written into the law itself. The Federal Circuit stay preserves the tariff only until the appeals process concludes or that authority lapses, whichever comes first. Section 232 against pharmaceuticals remains pending. The confrontation has not been avoided. It has been repositioned onto ground that is more favorable to Europe.</p><p>Europe's answer to the question of what strategy comes next was not a threat. It was five simultaneous construction projects, executed while American courts and bond markets handled the IEEPA problem. The US can invoke Section 301 against GDPR. It cannot un-build Wero, un-pass the Data Act, or un-allocate satellite spectrum.</p><p>Sun Tzu also wrote: build your opponent a golden bridge to retreat across. The Turnberry agreement, the WTO balance-of-payments challenge, the IEEPA refund process, the ninety-day pause mechanisms — Europe offered all of them. What it did not offer was a path back to the dependency structure that existed before 2025. The architecture is more durable than any ninety-day negotiating window.</p><p><em>Source: Bruegel / CNBC / European Payments Initiative / Bloomberg / Holland &amp; Knight / Duane Morris / EU Commission — Level 1–2 · 9 primary sources</em></p>",
+      "body": "<p>Sun Tzu wrote that victorious warriors win first and then go to war. On May 27, 2026, the European Commission presented its Tech Sovereignty Package — a set of measures restricting US cloud providers from handling sensitive government data — on the same day it published a satellite spectrum proposal structurally limiting Starlink's European expansion. Neither document was a countermeasure. They were the latest pieces of an architecture that has been under construction since before Liberation Day.</p><p>The conventional analysis of EU-US trade relations throughout 2025 and into 2026 focused on what Europe might do: whether it would activate its Anti-Coercion Instrument, reintroduce the suspended €93 billion retaliation package, or escalate at the WTO. That frame asked the wrong question. The correct question was what Europe had already done — and whether the United States had the legal instruments to reverse it.</p><p>Between April and December 2025, European regulators collected €3.77 billion in fines from US technology companies under the Digital Markets Act and Digital Services Act: €500 million from Apple, €200 million from Meta, €2.95 billion from Google in an antitrust ruling, and €120 million from X in the first-ever DSA non-compliance decision [digital-001]. The fine totals are not the instrument that matters. The conduct requirements attached to them are.</p><p>Meta redesigned its European advertising model after the DMA ruling — users can now explicitly consent or receive a less personalized experience, with the Commission monitoring compliance on a rolling basis. Apple was forced to open its App Store to third-party alternatives across EU markets. Amazon lost its General Court challenge against its Very Large Online Platform designation under the DSA, cementing transparency audits and content moderation obligations with no expiry date and no exit mechanism short of withdrawing from the European market [digital-001]. These changes are structural. They do not reverse when a tariff negotiation concludes.</p><p>The second front was less visible and more consequential. The EU Data Act entered full application in September 2025 [digital-002]. Chapter VII requires cloud providers operating in the EU to implement technical, legal, and organizational measures preventing non-EU governments from accessing non-personal data stored in Europe where such access would be unlawful under EU law. The target is explicit: the United States CLOUD Act of 2018, which authorizes US federal law enforcement to compel American-headquartered companies to disclose data regardless of storage location. Every AWS server in Frankfurt, every Azure datacenter in Amsterdam, is reachable under US law. Chapter VII is the EU's legal answer to that fact.</p><p>On May 7, CNBC reported that the Commission was preparing rules to restrict EU member governments' use of US cloud platforms for sensitive data in healthcare, finance, and judicial systems [digital-003]. The Tech Sovereignty Package presented on May 27 formalized that direction with the Cloud and AI Development Act and Chips Act 2.0. The mechanism is procurement, not prohibition. AWS, Azure, and Google Cloud are not banned — they are progressively excluded from the workloads where European governments cannot accept CLOUD Act exposure. A Commission spokesperson told CNBC the package was \"about Europe waking up and getting its act together.\" The result is equivalent to a ban on the most strategically sensitive use cases, achieved without triggering a single WTO dispute.</p><p>The third front received the least analytical attention. The European Payments Initiative launched Wero in 2024. By February 2026, EPI had signed a memorandum of understanding with the EuroPA Alliance — Bizum in Spain, MB WAY in Portugal, Vipps MobilePay in the Nordics, Bancomat in Italy — connecting approximately 130 million users across thirteen countries, covering roughly 72 percent of the EU and Norwegian population [digital-004]. Wero passed 50 million registered users in Belgium, France, and Germany by February 2026. Lidl, Decathlon, Rossmann, and Air Europa accept it at checkout. €7.5 billion in transfers processed as of September 2025.</p><p>The EU's Interchange Fee Regulation already caps Visa and Mastercard's consumer interchange fees at 0.2–0.3 percent. The scheme fees and processing charges that migrated outside the regulation's scope are under active scrutiny [digital-004]. The payment infrastructure alternative is not a pilot. It is live, it is scaling, and the February 2026 EuroPA MoU changed its trajectory from a regional product to a continental network in a single signature.</p><p>The fourth front arrived on the same day as the Tech Sovereignty Package. On May 27, the Commission proposed reserving two-thirds of the 2 GHz satellite frequency band for European operators, with Starlink eligible to bid only for a share of the remaining third [digital-005]. BNP Paribas equity research described the proposal as placing Starlink in a \"structurally inferior position\" in the European market. The US Federal Communications Commission formally objected. That objection confirms the measure landed where it was aimed.</p><p>The EU's IRIS2 constellation — 290 satellites across multiple orbits, initial services targeted for 2029 with full operations from 2030–2031 — is the structural alternative the spectrum reservation protects [digital-005]. IRIS2 was conceived as a defense and connectivity project. It has become a sovereignty instrument. Reserving the bandwidth now means that by the time IRIS2 is operational, the European market position Starlink would otherwise have locked in will not exist.</p><p>The fifth front is the only one where the pressure shows. The EU AI Act's most significant compliance requirements were set to take effect in August 2026 for US companies operating high-risk AI systems accessible from Europe — extraterritorial reach, fines up to €35 million or 7 percent of global annual revenue, no incorporation loophole [digital-006]. Then the European Parliament voted to explore pushing the deadline to December 2027. The delay is attributed in part to lobbying from US tech companies and the Trump administration.</p><p>That is precisely what makes it the most revealing data point in this analysis. The Data Act is law. Wero's EuroPA network exists. The satellite spectrum allocation is published. Section 301 cannot reach back and un-pass any of them. The AI Act is the one front that has not yet cleared the Council of the European Union — and it is the one front where US leverage is visibly working in real time. The political fight is happening now, in Brussels committee rooms that rarely attract attention outside election cycles. Whether the Council holds the August deadline or grants the delay will determine whether Europe's AI sovereignty architecture is completed before the next wave of US platform expansion arrives, or after it.</p><p><em>Wiba Signals is tracking the Council vote.</em></p><p>The counter-argument deserves honest presentation. Bruegel Senior Fellow Bertin Martens documented in April 2025 that the EU's primary trade countermeasure — the Anti-Coercion Instrument — cannot effectively target US digital platforms because Apple, Google, Meta, and Amazon all hold legal establishments in Ireland or Luxembourg, qualifying as entities with \"substantive presence\" in the EU under the ACI's own definitions [digital-007]. The trade bazooka cannot fire at the targets that matter most. Ignacio García Bercero at Bruegel recommended in February 2026 that the EU deploy the ACI if Section 301 investigations materialize into tariffs against EU digital regulation — a defensible escalation path [digital-008]. But the procurement mechanism in the Tech Sovereignty Package does not require ACI at all. Procurement rules do not classify a platform as foreign. They classify data as sensitive. The legal instrument is different. The structural outcome is the same.</p><p>None of this is complete. IRIS2 is not operational until 2029. Wero operates in three countries. CADA has not yet cleared the Council of the European Union. The remaining dependencies — in enterprise software, advertising infrastructure, developer tooling — will take years to unwind at current trajectory. And the Section 301 investigations launched in March 2026, targeting the DSA, DMA, GDPR, and digital services taxes directly, represent a US attempt to use trade law to dismantle the regulatory instruments that underpin this entire strategy [digital-009]. Section 122 expires by statute on July 24 — the 150-day ceiling written into the law itself. The Federal Circuit stay preserves the tariff only until the appeals process concludes or that authority lapses, whichever comes first. Section 232 against pharmaceuticals remains pending. The confrontation has not been avoided. It has been repositioned onto ground that is more favorable to Europe.</p><p>Europe's answer to the question of what strategy comes next was not a threat. It was five simultaneous construction projects, executed while American courts and bond markets handled the IEEPA problem. The US can invoke Section 301 against GDPR. It cannot un-build Wero, un-pass the Data Act, or un-allocate satellite spectrum.</p><p>Sun Tzu also wrote: build your opponent a golden bridge to retreat across. The Turnberry agreement, the WTO balance-of-payments challenge, the IEEPA refund process, the ninety-day pause mechanisms — Europe offered all of them. What it did not offer was a path back to the dependency structure that existed before 2025. The architecture is more durable than any ninety-day negotiating window.</p>",
       "category": "The Market",
       "date": "2026-05-31",
       "dateDisplay": "May 31, 2026",
@@ -424,7 +556,37 @@
       "seriesPart": 2,
       "featured": false,
       "readingTime": 7,
-      "ogImage": "/assets/og/keep-em-waiting-part-2.jpg"
+      "ogImage": "/assets/og/keep-em-waiting-part-2.jpg",
+      "sources": [
+        {
+          "name": "Bruegel",
+          "url": "https://www.bruegel.org/first-glance/eu-strategy-wake-united-states-supreme-court-tariffs-ruling"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/05/07/eu-commission-cloud-sensitive-data.html"
+        },
+        {
+          "name": "European Payments Initiative",
+          "url": "https://epicompany.eu/media-insights/wero-successfully-positioned-itself-on-payments"
+        },
+        {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-05-27/eu-satellite-proposal-makes-limited-room-for-musk-s-starlink"
+        },
+        {
+          "name": "Holland & Knight",
+          "url": "https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline"
+        },
+        {
+          "name": "Duane Morris",
+          "url": "https://www.duanemorris.com/alerts/new_section_301_investigations_ieepa_tariff_refund_developments_legal_challenges_section_0426.html"
+        },
+        {
+          "name": "EU Commission",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/data-act"
+        }
+      ]
     }
   ],
   "categories": [
