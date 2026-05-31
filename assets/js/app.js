@@ -279,10 +279,17 @@ async function loadArticle(slug) {
     // Source row
     const sourceRow = document.getElementById('js-source-row');
     if (sourceRow) {
-      sourceRow.innerHTML = `
-        <strong>Source:</strong> ${escHtml(article.source)} — Level ${article.sourceLevel} source
-        ${article.sourceUrl ? ` · <a href="${article.sourceUrl}" target="_blank" rel="noopener">View source →</a>` : ''}
-      `;
+      let sourcesHtml;
+      if (article.sources && article.sources.length) {
+        sourcesHtml = article.sources
+          .map(s => `<a href="${s.url}" target="_blank" rel="noopener">${escHtml(s.name)}</a>`)
+          .join(' &nbsp;&middot;&nbsp; ');
+      } else {
+        sourcesHtml = article.sourceUrl
+          ? `<a href="${article.sourceUrl}" target="_blank" rel="noopener">${escHtml(article.source)}</a>`
+          : escHtml(article.source);
+      }
+      sourceRow.innerHTML = `<strong>Source:</strong> ${sourcesHtml} &nbsp;&mdash;&nbsp; Level ${article.sourceLevel}`;
     }
 
     // Tags
@@ -336,6 +343,20 @@ function renderError() {
 
 // ─── Utils ────────────────────────────────────────────────
 function escHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
+}
+
+function setMeta(id, content) {
+  const el = document.getElementById(id);
+  if (el) el.setAttribute('content', content);
+}
+(str) {
   if (!str) return '';
   return String(str)
     .replace(/&/g, '&amp;')
