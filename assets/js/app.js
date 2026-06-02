@@ -356,17 +356,3 @@ function setMeta(id, content) {
   const el = document.getElementById(id);
   if (el) el.setAttribute('content', content);
 }
-(str) {
-  if (!str) return '';
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#x27;');
-}
-
-function setMeta(id, content) {
-  const el = document.getElementById(id);
-  if (el) el.setAttribute('content', content);
-}
