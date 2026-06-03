@@ -57,7 +57,7 @@
         "AI Infrastructure",
         "Enterprise AI"
       ],
-      "featured": true,
+      "featured": false,
       "ogImage": "/assets/og/ai-economy-two-layers.jpg",
       "sources": [
         {
@@ -554,7 +554,7 @@
       ],
       "series": "Keep em Waiting",
       "seriesPart": 2,
-      "featured": false,
+      "featured": true,
       "readingTime": 7,
       "ogImage": "/assets/og/keep-em-waiting-part-2.jpg",
       "sources": [
