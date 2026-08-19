@@ -10,20 +10,62 @@
     "The Worker"
   ],
   "articles": [
-            {
-          "id": "before-the-deal-the-law",
-          "slug": "before-the-deal-the-law",
-          "title": "Before the Deal, the Law",
-          "summary": "Iran is not waiting to see what a deal produces. The Iranian parliament is advancing legislation to make the Hormuz toll structure permanent national law. The Oman arrangement provides regional legitimacy. Europe privately acknowledged the fees are inevitable in July. A relief rally prices in the headline. The legislation is not in the headline.",
-          "body": "",
-          "category": "The Market",
-          "date": "2026-08-19",
-          "dateDisplay": "August 19, 2026",
-          "readingTime": 5,
-          "featured": true,
-          "tags": ["The Market", "Hormuz", "Oil", "Geopolitics", "Iran", "Energy Security", "Europe"]
+    {
+      "id": "before-the-deal-the-law",
+      "slug": "before-the-deal-the-law",
+      "title": "Before the Deal, the Law",
+      "summary": "Iran is not waiting to see what a deal produces. The Iranian parliament is advancing legislation to make the Hormuz toll structure permanent national law. The Oman arrangement provides regional legitimacy. Europe privately acknowledged the fees are inevitable in July. A relief rally prices in the headline. The legislation is not in the headline.",
+      "body": "<p><em>This piece stands alongside the ongoing Hormuz series. It addresses one specific development that has not received the attention it warrants: the sequencing of Iran's formalization of Hormuz passage control.</em></p>\n\n<hr>\n\n<p>The negotiation framing that has dominated coverage of the Hormuz crisis assumes a specific structure: Iran holds the strait, the United States pressures for reopening, a deal is struck on terms somewhere between the two positions, and passage resumes.</p>\n\n<p>That framing misses what is actually being built.</p>\n\n<hr>\n\n<h2>The Price List</h2>\n\n<p>Iran has published a formal pricing framework for Hormuz passage. National Security News describes it as Tehran's \"draft plan\" that turns the waterway into a \"toll booth\" — a structured system with specific fees per vessel category. Al Jazeera has documented that access is not purely fee-based: Iran selects which vessels qualify as compliant, meaning the structure is not a tariff but a permission system. The Iranian parliament is advancing legislation to establish this as permanent national law — a bill already under formal parliamentary review as of August 6, with a version targeting U.S. and Israeli transit specifically advanced by August 10.</p>\n\n<p>This is not a negotiating position. It is a legal architecture being constructed during an active conflict, while no U.S.-Iran talks are underway, with the MoU expired and no replacement framework in place.</p>\n\n<p>Iran is not waiting to see what a deal produces. Iran is determining what any deal must accommodate.</p>\n\n<hr>\n\n<h2>The Sequencing Logic</h2>\n\n<p>A toll structure imposed informally during conflict is vulnerable. If a deal is eventually signed, the party that extracted the toll is on the back foot — it looks like extortion that the agreement is ending.</p>\n\n<p>A toll structure codified in national legislation before any deal exists is different in kind. It becomes a domestic legal fact. No bilateral diplomatic agreement between the United States and Iran changes what the Iranian parliament has enacted. Any deal that requires Iran to repeal its own legislation requires Iran to pass a second law undoing the first — on a timeline, under pressure, after already having agreed to the deal's other terms. That is a structurally different negotiation than the one anyone is currently pricing.</p>\n\n<p>The Oman arrangement signed on August 17 — the same day the MoU expired — provides the regional legitimization layer. Oman is a sovereign state and a recognized neutral intermediary. An Iran-Oman bilateral agreement on Hormuz passage is not a unilateral Iranian imposition. It is a treaty. That is not a subtle distinction. It is the difference between Iran saying \"pay us\" and Iran saying \"here is the established framework, ratified with our neighbor, for regulated transit through our territorial waters.\"</p>\n\n<hr>\n\n<h2>The Reparations Context</h2>\n\n<p>Iran's formal demand list, published August 8, requires U.S. compensation for war damage before Hormuz reopens. The framing is explicit: the restrictions are a consequence of invasion, not a strategic choice Iran is making independently.</p>\n\n<p>This framing matters legally and politically. If Iran establishes that the toll structure exists because the United States conducted military operations against a sovereign state, the new pricing architecture is not extortion. It is — under a reading that much of the non-Western world will find straightforward — reparations-adjacent compensation for an act of war.</p>\n\n<p>Europe is not party to the conflict. Europe also did not oppose it. NATO chose not to participate. That decision, which was reasonable at the time, now carries a specific cost: Europe cannot argue that Iran's response to the invasion is illegitimate without implying that Europe should have acted to prevent the invasion. Most European governments are not in a position to make that argument.</p>\n\n<hr>\n\n<h2>What This Means for the Deal</h2>\n\n<p>Any agreement that does not explicitly address the legal status of Iran's domestic Hormuz legislation leaves that legislation in place. A deal that brings Brent down $15 and is announced as a resolution does not repeal the law. The law continues to govern who passes, at what price, and under what conditions.</p>\n\n<p>The relief rally prices in the headline. The legislation is not in the headline.</p>\n\n<hr>\n\n<h2>Europe's Answer</h2>\n\n<p>By July 2, Bloomberg reported what European governments were saying privately: some Hormuz fees are now inevitable. The EU extended its legal framework in May, sanctioned an IRGC naval unit, and listed two individuals and one entity — the formal architecture of opposition. None of it addressed the toll structure. All of it acknowledged it.</p>\n\n<p>When Trump proposed in April that the United States and Iran operate Hormuz as a \"joint venture\" — sharing toll revenue — the EU rejected the proposal immediately. Not because Europe intended to challenge the toll architecture. Because Europe declined to participate in legitimizing it through American co-ownership.</p>\n\n<p>The distinction is the answer. Europe sanctioned two people and accepted the inevitable. Fortune put it in a headline on August 18: <em>\"The global 'freedom of the seas' is dying in the Strait of Hormuz — and everyone, everywhere, will pay the tolls.\"</em></p>\n\n<p>That is not a prediction. It is a description of what has already been built into law.</p>\n\n<hr>\n\n<p><em>Iran Hormuz pricing framework: National Security News, Al Jazeera (March 26, 2026), Barchart. Iranian parliamentary legislation: Middle East Monitor (August 6), Iran International (August 10, 2026). Iran-Oman agreement: Times of Israel, Washington Post, August 17, 2026. Iran formal demands including war damage compensation: Fortune, PBS NewsHour, CNN, August 8, 2026. EU response: EU Council press releases May 22 and June 8, 2026; gCaptain. European nations accept inevitability: Bloomberg, July 2, 2026. Fortune: August 18, 2026. U.S.-Iran MoU: expired August 17, 2026.</em></p>",
+      "category": "The Market",
+      "date": "2026-08-19",
+      "dateDisplay": "August 19, 2026",
+      "readingTime": 5,
+      "featured": true,
+      "tags": [
+        "The Market",
+        "Hormuz",
+        "Oil",
+        "Geopolitics",
+        "Iran",
+        "Energy Security",
+        "Europe"
+      ],
+      "sourceLevel": 1,
+      "source": "National Security News / Al Jazeera / Bloomberg / Fortune",
+      "sourceUrl": "https://www.bloomberg.com/",
+      "ogImage": "/assets/og/before-the-deal-the-law.jpg",
+      "sources": [
+        {
+          "name": "National Security News: Iran Hormuz toll pricing framework",
+          "url": "https://www.nationalsecurity.news/"
         },
-{
+        {
+          "name": "Al Jazeera: Iran Hormuz passage compliance system (March 26, 2026)",
+          "url": "https://www.aljazeera.com/"
+        },
+        {
+          "name": "Middle East Monitor: Iranian parliament Hormuz legislation (August 6, 2026)",
+          "url": "https://www.middleeastmonitor.com/"
+        },
+        {
+          "name": "Iran International: Hormuz sovereignty bill (August 10, 2026)",
+          "url": "https://www.iranintl.com/"
+        },
+        {
+          "name": "Times of Israel / Washington Post: Iran-Oman Hormuz agreement (August 17, 2026)",
+          "url": "https://www.washingtonpost.com/"
+        },
+        {
+          "name": "Bloomberg: European nations accept Hormuz fees as inevitable (July 2, 2026)",
+          "url": "https://www.bloomberg.com/"
+        },
+        {
+          "name": "Fortune: Freedom of the seas dying in Hormuz (August 18, 2026)",
+          "url": "https://fortune.com/"
+        }
+      ]
+    },
+    {
       "id": "the-first-domino",
       "slug": "the-first-domino",
       "title": "The First Domino",
