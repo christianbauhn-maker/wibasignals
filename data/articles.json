@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-18",
-    "version": "1.4"
+    "lastUpdated": "2026-08-19",
+    "version": "1.5"
   },
   "categories": [
     "All",
@@ -10,6 +10,53 @@
     "The Worker"
   ],
   "articles": [
+    {
+      "id": "the-first-domino",
+      "slug": "the-first-domino",
+      "title": "The First Domino",
+      "summary": "Yesterday, Micron fell 7%. The Philadelphia Semiconductor Index dropped more than 5%. Financial media named the cause: earnings revisions, AI spend skepticism. Those explanations are not wrong. They are downstream. The signal started two floors below semiconductors. It started with diesel — and at 10:30 AM Eastern today, the EIA will print the number that defines how much runway is left.",
+      "body": "<p><em>This piece stands alongside the ongoing Hormuz series. <a href=\"/article?slug=hormuz-no-plan-b\" style=\"color:#c0392b;\">Part I — There Is No Plan B</a> · <a href=\"/article?slug=hormuz-spr-clock\" style=\"color:#c0392b;\">Part II — The Clock the Market Isn't Watching</a> · <a href=\"/article?slug=hormuz-spr-asymmetry\" style=\"color:#c0392b;\">Part III — 5.2x: The Asymmetry That Makes Every Scenario the Same Problem</a>. This piece is about what the market began feeling yesterday — and why it started where it did.</em></p>\n\n<hr>\n\n<p>Why diesel?</p>\n\n<p>Yesterday, Micron fell 7%. The Philadelphia Semiconductor Index dropped more than 5%. Nasdaq closed lower for the second day running. Financial media named the cause: earnings revisions, demand uncertainty, AI spend skepticism.</p>\n\n<p>Those explanations are not wrong. They are downstream.</p>\n\n<p>The signal started two floors below semiconductors. It started with diesel.</p>\n\n<hr>\n\n<h2>$5.35</h2>\n\n<p>The U.S. national average for on-highway diesel stands at <strong>$5.35 per gallon</strong>, according to EIA data from August 4. That is <strong>$1.55 above where it was one year ago</strong>. On the West Coast: <strong>$6.13 per gallon</strong>. Heating oil has broken <strong>$4.00</strong> — levels last seen in June 2022. Jet fuel has risen <strong>95%</strong> since the conflict began.</p>\n\n<p>Diesel is not a commodity the semiconductor sector consumes directly. But diesel is the cost embedded in every input that moves — raw materials, components, logistics, distribution. When it rises $1.55 per gallon over twelve months, the increase works through the supply chain in sequence: first logistics margins, then manufacturing input costs, then earnings revisions. The lag is real. The sequence is not.</p>\n\n<p>The semiconductor sector did not fall because of chips. It fell because of what it costs to move everything chips depend on.</p>\n\n<hr>\n\n<h2>Where the diesel comes from.</h2>\n\n<p>The Strait of Hormuz handled approximately <strong>20 million barrels of oil per day</strong> before February 28, 2026 — roughly 20% of global seaborne crude trade. Current throughput is running at approximately <strong>10% of pre-crisis norms</strong>, sustained largely through gray-fleet operations in Iranian coastal waters.</p>\n\n<p>The U.S. Strategic Petroleum Reserve has been absorbing the shortfall. At the last confirmed reading — week ending August 10 — the reserve stood at <strong>298.7 million barrels</strong>, its lowest level since 1983, drawing down at <strong>6.1 million barrels per week</strong>.</p>\n\n<p>The reserve's maximum refill capacity, at current infrastructure condition, is <strong>1.18 million barrels per week</strong>.</p>\n\n<p>The ratio is 5.2 to 1. One week of draws requires five weeks of uninterrupted refill to reverse. That arithmetic does not change with a diplomatic statement or a framework agreement. It changes when oil physically flows, arrives, and is pumped back in — at 1.18 million barrels per week.</p>\n\n<hr>\n\n<h2>A different kind of question.</h2>\n\n<p>Iran is currently charging <strong>$1–2 million per vessel</strong> for passage through Hormuz. Yemen's Houthi government has stated publicly that it intends to implement an equivalent structure in the Red Sea. Bloomberg reported on August 5 that shipowners are warning this sets a precedent for global transit fees.</p>\n\n<p>Two chokepoints. Three actors with independent economic incentives to maintain, not abandon, what they now control.</p>\n\n<p>The standard framework for this crisis treats it as a disruption — a temporary deviation from a baseline that will eventually be restored. That framework produces certain conclusions about timelines and deal structures and price ceilings.</p>\n\n<p>A different question: what if the baseline is being replaced, not interrupted? What if the map of how oil moves from where it is produced to where it is consumed is being redrawn — not as a crisis outcome, but as the new architecture?</p>\n\n<p>The data does not resolve that question. But the data does suggest it is the right question. And most current market pricing does not reflect it.</p>\n\n<hr>\n\n<h2>Today at 10:30 AM Eastern.</h2>\n\n<p>The EIA releases its weekly petroleum status report this morning. The new SPR figure will cover the week ending August 14.</p>\n\n<p>That number will not change the arithmetic. It will define how much runway is left within it.</p>\n\n<p>Below <strong>4.5 million barrels</strong> drawn: the timeline extends marginally. The TACO narrative — that a deal will come, that the situation is manageable — survives another week.</p>\n\n<p>At <strong>6.1 million barrels</strong>: confirmation of the established pace. The deadline for a functional agreement to avoid the legal reserve floor: <strong>September 15</strong> — nine days before Xi Jinping lands in Washington.</p>\n\n<p>Above <strong>8 million barrels</strong>: the timeline compresses. The deal deadline moves to September 2 or earlier. At 10 million barrels, it passes next week.</p>\n\n<p>We will publish the full analysis immediately after the release.</p>\n\n<p>The domino that fell yesterday was diesel. Watch what follows it.</p>\n\n<hr>\n\n<p><em>Sources: EIA Weekly Petroleum Status Report, week ending August 10, 2026 (298.7 Mbbl) · EIA on-highway diesel price data, August 4, 2026 · DOE SPR refill capacity specification at 56% of design · Bloomberg, \"Shipowners Warn Hormuz Tolls Could Set Precedent for Global Transit Fees\" (Aug 5, 2026) · Al Jazeera, \"Houthis want to copy Iran's Hormuz control in the Red Sea\" (Jul 28, 2026) · Hormuz throughput estimate based on AIS data and GlobalSecurity Day 170 update.</em></p>",
+      "category": "The Market",
+      "date": "2026-08-19",
+      "dateDisplay": "August 19, 2026",
+      "readingTime": 4,
+      "sourceLevel": 1,
+      "source": "EIA / Bloomberg / Al Jazeera / DOE",
+      "sourceUrl": "https://www.eia.gov/petroleum/supply/weekly/",
+      "tags": [
+        "The Market",
+        "Hormuz",
+        "Oil",
+        "SPR",
+        "Energy Security",
+        "Diesel",
+        "Semiconductors"
+      ],
+      "featured": true,
+      "ogImage": "/assets/og/the-first-domino.jpg",
+      "sources": [
+        {
+          "name": "EIA Weekly Petroleum Status Report (Aug 10, 2026)",
+          "url": "https://www.eia.gov/petroleum/supply/weekly/"
+        },
+        {
+          "name": "EIA On-Highway Diesel Prices (Aug 4, 2026)",
+          "url": "https://www.eia.gov/petroleum/gasdiesel/"
+        },
+        {
+          "name": "DOE SPR refill capacity specification",
+          "url": "https://www.energy.gov/ceser/strategic-petroleum-reserve"
+        },
+        {
+          "name": "Bloomberg: Shipowners Warn Hormuz Tolls Could Set Precedent (Aug 5, 2026)",
+          "url": "https://www.bloomberg.com/news/articles/2026-08-05/shipowners-say-hormuz-tolls-would-lead-to-more-charges-elsewhere"
+        },
+        {
+          "name": "Al Jazeera: Houthis want to copy Iran's Hormuz control in the Red Sea (Jul 28, 2026)",
+          "url": "https://www.aljazeera.com/news/2026/7/28/houthis-want-to-copy-irans-hormuz-control-in-the-red-sea-yemeni-fm"
+        }
+      ]
+    },
     {
       "id": "hormuz-spr-asymmetry",
       "slug": "hormuz-spr-asymmetry",
