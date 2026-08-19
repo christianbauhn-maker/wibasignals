@@ -10,7 +10,20 @@
     "The Worker"
   ],
   "articles": [
-    {
+            {
+          "id": "before-the-deal-the-law",
+          "slug": "before-the-deal-the-law",
+          "title": "Before the Deal, the Law",
+          "summary": "Iran is not waiting to see what a deal produces. The Iranian parliament is advancing legislation to make the Hormuz toll structure permanent national law. The Oman arrangement provides regional legitimacy. Europe privately acknowledged the fees are inevitable in July. A relief rally prices in the headline. The legislation is not in the headline.",
+          "body": "",
+          "category": "The Market",
+          "date": "2026-08-19",
+          "dateDisplay": "August 19, 2026",
+          "readingTime": 5,
+          "featured": false,
+          "tags": ["The Market", "Hormuz", "Oil", "Geopolitics", "Iran", "Energy Security", "Europe"]
+        },
+{
       "id": "the-first-domino",
       "slug": "the-first-domino",
       "title": "The First Domino",
