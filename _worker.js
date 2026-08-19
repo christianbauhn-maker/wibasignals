@@ -94,6 +94,24 @@ const ARTICLES = {
     title: 'AI Can Now Read Its Own Thoughts -- And It Reveals a Blind Spot',
     summary: 'Researchers have developed techniques that allow AI systems to monitor their own internal processing. The findings reveal that models do not always reason in the way their outputs suggest -- a gap with implications for AI reliability and interpretability.',
   },
+
+  'spr-treasury-parallel-reserves': {
+    title: 'Two Reserves. One Day. Same Mechanism.',
+    summary: "The SPR drew 5.268 million barrels for the week ending August 14 — the reserve now stands at 293.426 million barrels. Thirty-seven minutes earlier, Treasury announced a doubling of its long-bond buyback program. Two institutions deploying finite reserves to suppress prices the underlying structure would otherwise push higher. One mechanism, two markets, the same clock.",
+  },
+  'gold-silver-structural-floor': {
+    title: 'Two Flat Days. Then Both Moved at Once.',
+    summary: "Gold was flat on August 17 and 18 — the two days when the Hormuz architecture was being formalized. On August 19, the Treasury announced a long-bond buyback expansion and the Fed released minutes showing a 9-3 hold. Gold jumped 2.31 percent. Silver reversed from negative and gained 1.97 percent from open. Two flat days were not the market missing the signal. They were the market waiting for the right one.",
+  },
+  'taco-cements-floor': {
+    title: 'The Relief Rally Cements the Floor',
+    summary: "A Hormuz deal will bring Brent down approximately $15 to $20. Financial media will describe the end of the crisis. This is the most dangerous mispricing of 2026. The toll architecture survives the deal. The August CPI print — reflecting diesel at $5.40 — arrives in September. The relief rally does not reverse the inflation. It provides cover for it to become permanent.",
+  },
+  'no-clean-exit': {
+    title: 'There Is No Clean Exit',
+    summary: "Fox News published a retired general's argument that the Navy is overextended. Trump reversed Canadian tariffs without a formal announcement. The SPR stands at 293.426 million barrels. These are not three separate stories. They are three data points in a single argument: the United States does not have a clean exit from Hormuz because a clean exit would require the old architecture to still exist. It does not.",
+  },
+
 };
 
 export default {
