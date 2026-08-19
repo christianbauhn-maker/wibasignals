@@ -14,6 +14,10 @@ const escapeAttr = (str) => String(str)
   .replace(/>/g, '&gt;');
 
 const ARTICLES = {
+  'the-first-domino': {
+    title: 'The First Domino',
+    summary: "Yesterday, Micron fell 7%. The Philadelphia Semiconductor Index dropped more than 5%. Financial media named the cause: earnings revisions, AI spend skepticism. Those explanations are not wrong. They are downstream. The signal started two floors below semiconductors. It started with diesel — and at 10:30 AM Eastern today, the EIA will print the number that defines how much runway is left.",
+  },
   'ai-economy-two-layers': {
     title: 'The AI Economy Has Two Layers. The Market Counts One.',
     summary: "Nvidia's quarterly Data Center revenue crossed $75 billion. Annualized AI service consumption across Anthropic, OpenAI, and Microsoft Copilot totals roughly $60 to $75 billion. Infrastructure spend is running at approximately ten times the consumption layer. Both are real numbers. They measure different things.",
