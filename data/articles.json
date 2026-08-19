@@ -20,7 +20,7 @@
           "date": "2026-08-19",
           "dateDisplay": "August 19, 2026",
           "readingTime": 5,
-          "featured": false,
+          "featured": true,
           "tags": ["The Market", "Hormuz", "Oil", "Geopolitics", "Iran", "Energy Security", "Europe"]
         },
 {
@@ -45,7 +45,7 @@
         "Diesel",
         "Semiconductors"
       ],
-      "featured": true,
+      "featured": false,
       "ogImage": "/assets/og/the-first-domino.jpg",
       "sources": [
         {
