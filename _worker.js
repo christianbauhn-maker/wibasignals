@@ -14,6 +14,10 @@ const escapeAttr = (str) => String(str)
   .replace(/>/g, '&gt;');
 
 const ARTICLES = {
+  'before-the-deal-the-law': {
+    title: 'Before the Deal, the Law',
+    summary: "Iran is not waiting to see what a deal produces. The Iranian parliament is advancing legislation to make the Hormuz toll structure permanent national law. The Oman arrangement provides regional legitimacy. Europe privately acknowledged the fees are inevitable in July. A relief rally prices in the headline. The legislation is not in the headline.",
+  },
   'the-first-domino': {
     title: 'The First Domino',
     summary: "Yesterday, Micron fell 7%. The Philadelphia Semiconductor Index dropped more than 5%. Financial media named the cause: earnings revisions, AI spend skepticism. Those explanations are not wrong. They are downstream. The signal started two floors below semiconductors. It started with diesel — and at 10:30 AM Eastern today, the EIA will print the number that defines how much runway is left.",
