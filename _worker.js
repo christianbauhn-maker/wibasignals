@@ -1,73 +1,70 @@
 var __defProp = Object.defineProperty;
 var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
-
-var escapeAttr = /* @__PURE__ */ __name((str) => String(str).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"), "escapeAttr");
-
+var escapeAttr = __name((str) => String(str).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"), "escapeAttr");
+const ADMIN_TOKEN = "wiba-kv-admin-2026-b7r3p9";
 var worker_default = {
   async fetch(request, env) {
     try {
       const url = new URL(request.url);
       const pathname = url.pathname;
-
       if (pathname === "/worker-ping") {
-        return new Response(JSON.stringify({ worker: true, v: 5 }), {
+        return new Response(JSON.stringify({ worker: true, v: 6 }), {
           headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }
         });
       }
-
+      if (pathname === "/admin/kv/seed" && request.method === "POST") {
+        const token = request.headers.get("X-Admin-Token");
+        if (token !== ADMIN_TOKEN) return new Response("Unauthorized", { status: 401 });
+        const body = await request.json();
+        const articles = body.articles || [];
+        await env.ARTICLES_KV.put("articles_index", JSON.stringify(body.index || body));
+        for (const a of articles) {
+          const slug = a.slug || a.id;
+          if (slug) await env.ARTICLES_KV.put("article:" + slug, JSON.stringify({ title: a.title || "", summary: a.summary || a.excerpt || "" }));
+        }
+        return new Response(JSON.stringify({ ok: true, seeded: articles.length }), { headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } });
+      }
+      if (pathname === "/admin/kv/publish" && request.method === "POST") {
+        const token = request.headers.get("X-Admin-Token");
+        if (token !== ADMIN_TOKEN) return new Response("Unauthorized", { status: 401 });
+        const body = await request.json();
+        const article = body.article;
+        const index = body.index;
+        if (!article || !index) return new Response("Missing article or index", { status: 400 });
+        const slug = article.slug || article.id;
+        await env.ARTICLES_KV.put("article:" + slug, JSON.stringify({ title: article.title || "", summary: article.summary || article.excerpt || "" }));
+        await env.ARTICLES_KV.put("articles_index", JSON.stringify(index));
+        return new Response(JSON.stringify({ ok: true, slug }), { headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } });
+      }
       if (pathname === "/data/articles.json") {
         const index = await env.ARTICLES_KV.get("articles_index");
-        if (index) {
-          return new Response(index, {
-            headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*", "Cache-Control": "no-store" }
-          });
-        }
+        if (index) return new Response(index, { headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*", "Cache-Control": "no-store" } });
         return env.ASSETS.fetch(request);
       }
-
-      if (pathname !== "/article.html" && pathname !== "/article") {
-        return env.ASSETS.fetch(request);
-      }
-
+      if (pathname !== "/article.html" && pathname !== "/article") return env.ASSETS.fetch(request);
       const slug = url.searchParams.get("slug");
       if (!slug) return env.ASSETS.fetch(request);
-
-      const article = await env.ARTICLES_KV.get(`article:${slug}`, { type: "json" });
+      const article = await env.ARTICLES_KV.get("article:" + slug, { type: "json" });
       if (!article) return env.ASSETS.fetch(request);
-
       const origin = new URL(request.url).origin;
-      const assetReq = new Request(`${origin}/article`, { method: "GET" });
+      const assetReq = new Request(origin + "/article", { method: "GET" });
       const response = await env.ASSETS.fetch(assetReq);
-
-      const debugInfo = `slug:${slug};assets:${response.status};ok:${response.ok}`;
-      const ogImage = `https://wibasignals.com/assets/og/${slug}.jpg`;
-      const ogUrl = `https://wibasignals.com/article.html?slug=${slug}`;
+      const ogImage = "https://wibasignals.com/assets/og/" + slug + ".jpg";
+      const ogUrl = "https://wibasignals.com/article.html?slug=" + slug;
       const title = escapeAttr(article.title || "Wiba Signals");
       const desc = escapeAttr(article.summary || "");
-
-      const appendedTags = [
-        `<meta property="og:image"        content="${ogImage}">`,
-        `<meta property="og:image:width"  content="1200">`,
-        `<meta property="og:image:height" content="630">`,
-        `<meta name="twitter:image"       content="${ogImage}">`,
-        `<meta name="twitter:title"       content="${title}">`,
-        `<meta name="twitter:description" content="${desc}">`
-      ].join("\n  ");
-
+      const appendedTags = '<meta property="og:image" content="' + ogImage + '">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta name="twitter:image" content="' + ogImage + '">\n  <meta name="twitter:title" content="' + title + '">\n  <meta name="twitter:description" content="' + desc + '">';
       const transformed = new HTMLRewriter()
-        .on("title", { element(el) { el.setInnerContent(`${article.title} -- Wiba Signals`); } })
+        .on("title", { element(el) { el.setInnerContent(article.title + " -- Wiba Signals"); } })
         .on('meta[property="og:title"]', { element(el) { el.setAttribute("content", title); } })
         .on('meta[property="og:description"]', { element(el) { el.setAttribute("content", desc); } })
         .on('meta[property="og:url"]', { element(el) { el.setAttribute("content", ogUrl); } })
         .on('meta[name="twitter:card"]', { element(el) { el.setAttribute("content", "summary_large_image"); } })
-        .on("head", { element(el) { el.append(`\n  ${appendedTags}\n`, { html: true }); } })
+        .on("head", { element(el) { el.append("\n  " + appendedTags + "\n", { html: true }); } })
         .transform(response);
-
       const newHeaders = new Headers(transformed.headers);
-      newHeaders.set("x-wiba-debug", debugInfo);
       newHeaders.set("Cache-Control", "no-store");
       return new Response(transformed.body, { status: transformed.status, headers: newHeaders });
-
     } catch (e) {
       const errResp = await env.ASSETS.fetch(request);
       const h = new Headers(errResp.headers);
@@ -77,5 +74,4 @@ var worker_default = {
     }
   }
 };
-
 export { worker_default as default };
